@@ -1,0 +1,3384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlands Coffee</title>
+    <link rel="icon" href="./imgs/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js">
+    <script src="./bootstrap-5.3.0-alpha3-dist/bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <scrip src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="stylesheet" href="http://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+    <script src="http://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+    <script type="text/javascript">
+      new WOW().init()
+    </script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+     <link rel="stylesheet" href="./assets/css/reset.css">
+     <link rel="stylesheet" href="./assets/css/main.css">
+     <link rel="stylesheet" href="./themify-icons-font (4)/themify-icons/themify-icons.css">
+</head>
+<body onload="thoatmenu(),hienthithoigian()">
+  <div class="main">
+    <video src="./MP4/HIGHLANDS COFFEE.mp4" autoplay class="video-img img-fluid" type="video/mp4" muted plays-inline onended="myFunction()"></video>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-color-header">
+            <div class="container-xl headder">
+             <div>
+              <img src="./imgs/logo.jpg" alt="" class="size-img img-fluid img_logo"   width="100" height="100">
+             </div>
+              <div>
+                <form class="d-flex justify-content-around align-items-center form menu-thunho" role="search">
+                    <a class="form_chinh an">
+                        <input class="form-control me-2 tukhoa an" type="search" placeholder="Từ khóa" aria-label="Search">
+                        <i class="ti-search timkiem an"></i>
+                    </a>
+                    <img src="./imgs/logo_vietnam.jpg" class="vietnam" alt="">
+                    <img src="./imgs/logo_american.jpg" class="vietnam" alt="">
+                    <div >
+                      <button class="navbar-toggler icon-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon "></span>
+                      </button>
+                    </div>
+                  </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase chu-header fluid-header an">
+                    <li class="nav-item">
+                      <a class="nav-link thuoctinh-header quancaphe" >Quán Cà Phê</a>
+                    </li>
+                    <li class="nav-item thucdonli">
+                      <a class="nav-link thuoctinh-header thucdon" href="#">Thực Đơn</a>
+                    </li>
+                    <li class="nav-item" id="tintucnew">
+                      <a class="nav-link thuoctinh-header tintucnew" href="#">Tin Tức</a>
+                    </li>
+                    <li class="nav-item" id="congdongnew">
+                      <a class="nav-link thuoctinh-header congdongnew" href="#">Cộng đồng</a>
+                    </li>
+                    <li class="nav-item chungtoi">
+                      <a class="nav-link thuoctinh-header vechungtoinew" href="#">Về Chúng Tôi</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link thuoctinh-header" href="https://careers.highlandscoffee.com.vn/vi/trang-chu/">Nghề Nghiệp</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link thuoctinh-header muangay" href="#">Mua Ngay</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="menu-drop">
+            <div class="container-fluid">
+             <div class="row">
+              <div class="col-md-6 col-lg-5 col-sm-7 col-10 menu-list">
+               <div class="img-fluid nut-x">
+                <i class="ti-close"></i>
+               </div>
+                <div class="list-group danhsach">
+                  
+                  <div id="accordion lop">
+                    <div class="card lop">
+                      <div class="card-header menu-thuoctinh-list">
+                        <a class="btn menu_chu quancaphe" >
+                          QUÁN CÀ PHÊ
+                        </a>
+                      </div>
+                      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                      </div>
+                    </div>
+                    <div class="card lop">
+                      <div class="card-header menu-thuoctinh-list">
+                        <a class="collapsed btn thucdonli" >
+                         THỰC ĐƠN
+                      </a>
+                      <a class="dropdown-toggle btn" data-bs-toggle="collapse" href="#thucdon1"></a>
+                      </div>
+                      <div id="thucdon1" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body py-0 xam">
+                          <div id="accordion">
+                            <div class="card lop">
+                              <div class="card-header menu-thuoctinh-list xam lop ten">
+                                <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#caphe">
+                                  CÀ PHÊ
+                                </a>
+                              </div>
+                              <div id="caphe" class="collapse " data-bs-parent="#accordion">
+                                <div class="list-group list-group-flush py-0">
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Phin</a>
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">PhinDi</a>
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Espresso</a>
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="card lop">
+                              <div class="card-header menu-thuoctinh-list xam lop ten">
+                                <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#freeze">
+                                  FREEZE
+                                </a>
+                              </div>
+                              <div id="freeze" class="collapse" data-bs-parent="#accordion">
+                                <div class="list-group list-group-flush py-0">
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Freeze Cà Phê Phin</a>
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Freeze Không Cà Phê</a>
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="card lop">
+                              <div class="card-header menu-thuoctinh-list xam lop ten">
+                                <a class="btn menu_chu dropdown-toggle ten" data-bs-toggle="collapse" href="#tra">
+                                  TRÀ
+                                </a>
+                              </div>
+                              <div id="tra" class="collapse " data-bs-parent="#accordion">
+                                <div class="list-group list-group-flush py-0">
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Sen Vàng Mới</a>
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thạch Đào</a>
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thanh Đào</a>
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thạch Vải</a>
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Nhiệt Đới (MỚI!)</a>
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="card lop">
+                              <div class="card-header menu-thuoctinh-list xam lop ten">
+                                <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#khac">
+                                  KHÁC
+                                </a>
+                              </div>
+                              <div id="khac" class="collapse " data-bs-parent="#accordion">
+                                <div class="list-group list-group-flush py-0">
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Bánh Ngọt</a>
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Merchandise</a>
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Đóng Gói</a>
+                                  <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Thực Đơn Giao Hàng</a>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card lop">
+                      <div class="card-header menu-thuoctinh-list">
+                        <a class="collapsed btn tintucnew" data-bs-toggle="collapse" href="#collapseThree">
+                           TIN TỨC
+                        </a>
+                      </div>
+                      <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                      </div>
+                    </div>
+                    <div class="card lop">
+                      <div class="card-header menu-thuoctinh-list">
+                        <a class="btn menu_chu congdongnew" data-bs-toggle="collapse" href="#collapseOne">
+                          CỘNG ĐỒNG
+                        </a>
+                      </div>
+                      <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                      </div>
+                    </div>
+                    <div class="card lop">
+                      <div class="card-header menu-thuoctinh-list">
+                        <a class="collapsed btn vechungtoinew" >
+                         VỀ CHÚNG TÔI
+                      </a>
+                      <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#vechungtoi"></a>
+                      </div>
+                      <div id="vechungtoi" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body py-0 xam">
+                         <div class="list-group list-group-flush py-0">
+                          <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">NGUỒN GỐC</a>
+                          <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">DỊCH VỤ</a>
+                          <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">NGHỀ NGHIỆP</a>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card lop">
+                      <div class="card-header menu-thuoctinh-list">
+                        <a class="btn menu_chu" href="https://careers.highlandscoffee.com.vn/vi/trang-chu/">
+                          NGHỀ NGHIỆP
+                        </a>
+                      </div>
+                      <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                      </div>
+                    </div>
+                    <div class="card lop">
+                      <div class="card-header menu-thuoctinh-list">
+                        <a class="btn menu_chu muangay" data-bs-toggle="collapse" href="#collapseOne">
+                          MUA NGAY
+                        </a>
+                      </div>
+                      <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="timkiemtukhoa">
+                    <input type="text" class="my-3 mx-auto d-block input-list" placeholder="  Từ khóa">
+                  </div>
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+    </header>
+
+    <div class="slide-show">
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imgs/img_1.png" alt="" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/img_2.png" alt="" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/img_3.png" alt="" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/img_4.png" alt="" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/img_5.png" alt="" class="d-block" style="width:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <img src="./imgs/img_6.png" class="img-fluid d-block wow slideInDown img-6" data-wow-duration="1s" data-wow-delay="0.5s" style="width:100%" alt="">
+    </div>
+
+    <div>
+      <img src="./imgs/img_7.jpg" class="img-fluid d-block wow slideInDown" data-wow-duration="1s" data-wow-delay="=1s" style="width:100%" alt="">
+    </div>
+    
+    <img src="./imgs/images/img_8.png" class="rounded-circle comment img-fluid" width="60" height="60" alt="">
+    <img src="./imgs/images/img_9.png" class="rounded-circle comment1 img-fluid" width="60" height="60" alt="">
+   
+    <div class="container-fluid">
+      <div class="row">
+        <!-- <img src="./imgs/img_10.jpg" class="col-lg-6 col-12 img-fluid px-0 imgs" alt="">
+        <img src="./imgs/img_11.jpg" class="col-lg-6 col-12 img-fluid px-0 imgs" alt=""> -->
+        <div class="col-12 col-lg-6 anh_10 wow wobble" data-wow-duration="1s" data-wow-delay="0.5s">
+           <div class="container-fluid mt-3 pt-2">
+            <h3 class="wow swing" data-wow-duration="1s" data-wow-delay="1.5s" >QUÁN MỚI</h3>
+           </div>
+           <div class="container mt-4">
+            <div class="row">
+
+              <div class="col-12 thongtin">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active wow swing"  data-wow-duration="1s" data-wow-delay="1.5s" >
+                      <h3>721 HUỲNH TẤN PHÁT</h3>
+                      <p class="chu_1">721 HUỲNH TẤN PHÁT, PHÚ THUẬN, QUẬN 7, TP.HỒ CHÍ MINH</p>
+                      <h2>TÌM ĐƯỜNG</h2>
+                    </div>
+                    <div class="carousel-item">
+                      <h3>HÀM CÁ MẬP</h3>
+                      <p class="chu_1">TẦNG 3, ĐINH TIÊN HOÀNG, HÀNG TRỐNG, QUẬN HOÀN KIẾM, HÀ NỘI</p>
+                      <h2>TÌM ĐƯỜNG</h2>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+             </div>
+            </div>
+           </div>
+        <div class="col-12 col-lg-6 anh_11 wow wobble" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="container mt-3 ps-lg-5 pt-2">
+              <h3 class="mau wow swing" data-wow-duration="1s" data-wow-delay="1.5s">TIN MỚI NHẤT</h3>
+              <div class="mt-3">
+                <div class="container-fluid px-0 mx-0">
+                    <div class="row">
+                      <img src="./imgs/img_12.jpg" class="img-fluid col-5 col-lg-3 pe-0 anh_12 wow flipInX" data-wow-duration="1s" data-wow-delay="1.5s" alt="">
+                      <div class="col-lg-8 col-7 pe-0 wow flip" data-wow-duration="1s" data-wow-delay="1.5s">
+                        <p class="chu">MỚI! TRÀ TUYẾT HIGHLANDS COFFEE</p>
+                        <p class="mt-2"><i class="ti-calendar"></i>  17/5/2023</p>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <img src="./imgs/img_13.jpg" class="img-fluid col-5 col-lg-3 pe-0 anh_12 wow flipInX" data-wow-duration="1s" data-wow-delay="1.5s" alt="">
+                      <div class="col-lg-8 col-7 pe-0 wow flip" data-wow-duration="1s" data-wow-delay="1.5s">
+                        <p class="chu">TRI ÂN KHÁCH HÀNG</p>
+                        <p class="mt-2"><i class="ti-calendar"></i>  4/5/2023</p>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <img src="./imgs/images/img_15.png" class="img-fluid col-5 col-lg-3 pe-0 anh_12 wow flipInX" data-wow-duration="1s" data-wow-delay="1.5s" alt="">
+                      <div class="col-lg-8 col-7 pe-0 wow flip" data-wow-duration="1s" data-wow-delay="1.5s">
+                        <p class="chu">MÃNH MẼ LÀM ĐIỀU MÌNH YÊU</p>
+                        <p class="mt-2"><i class="ti-calendar"></i>  6/3/2023</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="input-group mt-3 me-5 pe-5 ghinho">
+                <input type="text" class="form-control loaibo" placeholder="Địa chỉ email của bạn....." name="email">
+                <span class="input-group-text mau_nen">GỬI</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col-lg-11">
+           <div class="container-fluid ">
+            <div class="row ">
+              <div class="col-lg-3 d-flex align-items-center">
+               <div class="container-fluid">
+                <div class="row">
+                 <div class="col-2"></div>
+                 <div class="col-lg-6 mt-2 mt-lg-0 tonghop">
+                   <img src="./imgs/img_face.jpg" class="img-fluid face wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2s" width="25px" alt="">
+                   <img src="./imgs/img_you.jpg" class="img-fluid you wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2.5s" width="25px" alt="">
+                   <img src="./imgs/img_ins.jpg" class="img-fluid ins wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="3s" width="25px" alt="">
+                 </div>
+                 <div class="col-2"></div>
+                </div>
+               </div>
+              </div>
+              <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2s">2018 Highlands Coffee</div>
+              <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.5s"><i class="ti-location-arrow me-2"></i> Đăng ký để nhận bản tin</div>
+              <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="3s"><i class="ti-email me-2"></i> ssdssdq@highlandscoffee.com.vn</div>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid phanchat">
+       <div class="row">
+        <div class="col-lg-5 col-2"></div>
+        <div class="col-lg-4 col-2"></div>
+        <div class="col-lg-3 col-8 mau_input boder px-0">
+          <div class="container-fluid d-flex justify-content-center align-items-center mauchat">
+            <p class="chu_chat py-4 px-2 text-center">Bạn vui lòng điền vào biểu mẫu dưới đây và chúng tôi sẽ liên hệ lại với bạn ngay khi có thể</p>
+        </div>
+        <div class="container d-flex justify-content-center">
+          <form action="/action_page.php" class="was-validated mau_input">
+            <div class="mb-3 mt-3">
+            <label for="uname" class="form-label"></label>
+            <input type="text" class="form-control" id="uname" placeholder="* Tên" name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="mb-3">
+            <label for="pwd" class="form-label"></label>
+            <input type="password" class="form-control" id="pwd" placeholder="* Email" name="pswd" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="mb-3">
+              <label for="pwdd" class="form-label"></label>
+              <textarea type="password" class="form-control" id="pwdd" placeholder="* Thư" name="pswd" required></textarea>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <button type="submit" class="btn-primary btn mauchat submit">Hoàn tất</button>
+            </form>
+         </div>
+        </div>
+       </div>
+    </div>
+ 
+    <div class="navbar_menu2 container-fluid">
+     <div class="row">
+      <div class="col-lg-12">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <h1 class="py-3">NGUỒN GỐC</h1>
+            </div>
+            <div class="col-lg-3">
+              <h1 class="py-3">DỊCH VỤ</h1>
+            </div>
+            <div class="col-lg-3">
+              <h1 class="py-3">NGHỀ NGHIỆP</h1>
+            </div>
+            <div class="col-lg-3">
+              <img src="./imgs/img_thuonghieu.jpg" class="img-fluid py-3 img-cafe" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+
+    <div class="navbar_menu container-fluid">
+       <div class="row">
+        <div class="col-1"></div>
+        <div class="col-lg-2">
+          <h1 class="py-3">CÀ PHÊ</h1>
+          <p class="chu_text">Cà Phê Phin</p>
+          <p class="chu_text py-2">PhinDi</p>
+          <p class="chu_text">Cà Phê Expresso</p>
+        </div>
+        <div class="col-lg-2">
+          <h1 class="py-3">FREEZE</h1>
+          <p class="chu_text">Freeze Cà Phê Phin</p>
+          <p class="chu_text py-2">Freeze Không Cà Phê</p>
+        </div>
+        <div class="col-lg-2">
+          <h1 class="py-3">TRÀ</h1>
+          <p class="chu_text">Trà Thạch Đào</p>
+          <p class="chu_text py-2">Trà Thanh Đào</p>
+          <p class="chu_text">Trà Thạch Vải</p>
+          <p class="chu_text py-2">Trà Sen Vàng Mới</p>
+          <p class="chu_text">Trà Nhiệt Đới (MỚI)</p>
+        </div>
+        <div class="col-lg-2">
+          <h1 class="py-3">KHÁC</h1>
+          <p class="chu_text">Bánh Ngọt</p>
+          <p class="chu_text py-2">Merchandise</p>
+          <p class="chu_text">Cà Phê Đóng Gói</p>
+          <p class="chu_text pt-2">Thực Đơn Giao Hàng</p>
+        </div>
+        <div class="col-lg-2">
+          <img src="./imgs/img_cafe.jpg" class="img-fluid py-3 img-cafe" alt="">
+        </div>
+        <div class="col-1"></div>
+       </div>
+    </div>
+
+    <img src="./imgs/images/img_lanchuot.png" class="rounded-circle lanchuot img-fluid" width="60" height="60" alt="">
+
+  </div>
+
+
+  <div class="main1">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-color-header">
+          <div class="container-xl headder">
+           <div>
+            <img src="./imgs/logo.jpg" alt="" class="size-img img-fluid img_logo"   width="100" height="100">
+           </div>
+            <div>
+              <form class="d-flex justify-content-around align-items-center form menu-thunho" role="search">
+                  <a class="form_chinh an">
+                      <input class="form-control me-2 tukhoa an" type="search" placeholder="Từ khóa" aria-label="Search">
+                      <i class="ti-search timkiem an"></i>
+                  </a>
+                  <img src="./imgs/logo_vietnam.jpg" class="vietnam" alt="">
+                  <img src="./imgs/logo_american.jpg" class="vietnam" alt="">
+                  <div >
+                    <button class="navbar-toggler icon-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                      <span class="navbar-toggler-icon "></span>
+                    </button>
+                  </div>
+                </form>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase chu-header fluid-header an">
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header quancaphe" >Quán Cà Phê</a>
+                  </li>
+                  <li class="nav-item thucdonli">
+                    <a class="nav-link thuoctinh-header thucdon" href="#">Thực Đơn</a>
+                  </li>
+                  <li class="nav-item" id="tintucnew">
+                    <a class="nav-link thuoctinh-header tintucnew" href="#">Tin Tức</a>
+                  </li>
+                  <li class="nav-item" id="congdongnew">
+                    <a class="nav-link thuoctinh-header congdongnew" href="#">Cộng đồng</a>
+                  </li>
+                  <li class="nav-item chungtoi">
+                    <a class="nav-link thuoctinh-header vechungtoinew" href="#">Về Chúng Tôi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header" href="https://careers.highlandscoffee.com.vn/vi/trang-chu/">Nghề Nghiệp</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header muangay" href="#">Mua Ngay</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="menu-drop1">
+          <div class="container-fluid">
+           <div class="row">
+            <div class="col-md-6 col-lg-5 col-sm-7 col-10 menu-list1">
+             <div class="img-fluid nut-x">
+              <i class="ti-close"></i>
+             </div>
+              <div class="list-group danhsach">
+                
+                <div id="accordion lop">
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu quancaphe" >
+                        QUÁN CÀ PHÊ
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn thucdonli" >
+                       THỰC ĐƠN
+                    </a>
+                    <a class="dropdown-toggle btn" data-bs-toggle="collapse" href="#thucdon1"></a>
+                    </div>
+                    <div id="thucdon1" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body py-0 xam">
+                        <div id="accordion">
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#caphe1">
+                                CÀ PHÊ
+                              </a>
+                            </div>
+                            <div id="caphe1" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Phin</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">PhinDi</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Espresso</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#freeze1">
+                                FREEZE
+                              </a>
+                            </div>
+                            <div id="freeze1" class="collapse" data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Freeze Cà Phê Phin</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Freeze Không Cà Phê</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle ten" data-bs-toggle="collapse" href="#tra1">
+                                TRÀ
+                              </a>
+                            </div>
+                            <div id="tra1" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Sen Vàng Mới</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thạch Đào</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thanh Đào</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thạch Vải</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Nhiệt Đới (MỚI!)</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#khac1">
+                                KHÁC
+                              </a>
+                            </div>
+                            <div id="khac1" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Bánh Ngọt</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Merchandise</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Đóng Gói</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Thực Đơn Giao Hàng</a>
+                               </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn tintucnew">
+                         TIN TỨC
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu congdongnew">
+                        CỘNG ĐỒNG
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn vechungtoinew" >
+                       VỀ CHÚNG TÔI
+                    </a>
+                    <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#vechungtoi1"></a>
+                    </div>
+                    <div id="vechungtoi1" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body py-0 xam">
+                       <div class="list-group list-group-flush py-0">
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">NGUỒN GỐC</a>
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">DỊCH VỤ</a>
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">NGHỀ NGHIỆP</a>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu" href="https://careers.highlandscoffee.com.vn/vi/trang-chu/">
+                        NGHỀ NGHIỆP
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu muangay">
+                        MUA NGAY
+                      </a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="timkiemtukhoa">
+                  <input type="text" class="my-3 mx-auto d-block input-list" placeholder="  Từ khóa">
+                </div>
+              </div>
+            </div>
+           </div>
+          </div>
+        </div>
+  </header>
+  <div class="container mt-5">
+    <h4 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="=1s">TIN TỨC</h4>
+  </div>
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_2/img-1.jpg" class="img-fluid mb-3 img-cafe img-hover wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="=1s">PHINDI HẠT DẺ CƯỜI - HÉ MỞ NỤ CƯỜI</p>
+      </div>
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_2/img-2.jpg" class="img-fluid mb-3 img-cafe img-hover  wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="=1s">MỚI! TRÀ TUYẾT HIGHLANDS COFFEE</p>
+      </div>
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_2/img-3.jpg" class="img-fluid mb-3 img-cafe img-hover  wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="=1s">TRI ÂN KHÁCH HÀNG - HIGHLANDS COFFEE</p>
+      </div>
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_2/img-4.jpg" class="img-fluid mb-3 img-cafe img-hover  wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="=1s">VỊ COOL SẢNG KHOÁI, TRÀ DƯA HẤU VẢI</p>
+      </div>
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_2/img-5.png" class="img-fluid mb-3 img-cafe img-hover  wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="=1s">MẠNH MẼ LÀM ĐIỀU MÌNH YÊU</p>
+      </div>
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_2/img-6.jpg" class="img-fluid mb-3 img-cafe img-hover  wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="=1s">HẸN YÊU TẠI HIGHLANDS COFFEE</p>
+      </div>
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_2/img-7.png" class="img-fluid mb-3 img-cafe img-hover  wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="=1s">APP NÀY LÀ CỦA CHÚNG MÌNH</p>
+      </div>
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_2/img-8.jpg" class="img-fluid mb-3 img-cafe img-hover  wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="=1s">LỊCH HOẠT ĐỘNG TẾT NGUYÊN ĐÁN 2023</p>
+      </div>
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_2/img-9.jpg" class="img-fluid mb-3 img-cafe img-hover  wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="=1s">ĐÓN TẾT NÀY THẬT KHÁC LẠ VỚI HIGHLANDS COFFEE</p>
+      </div>
+    </div>
+  </div>
+  <div class="container d-flex justify-content-center align-items-center">
+    <button type="button" class="btn text-danger border border-danger nut-btn wow rollIn"  data-wow-duration="1s" data-wow-delay="=1s">XEM THÊM</button>
+  </div>
+
+  <div class="container-fluid footer mt-5">
+    <div class="row">
+      <div class="col-lg-11">
+         <div class="container-fluid ">
+          <div class="row ">
+            <div class="col-lg-3 d-flex align-items-center">
+             <div class="container-fluid">
+              <div class="row">
+               <div class="col-2"></div>
+               <div class="col-lg-6 mt-2 mt-lg-0 tonghop">
+                 <img src="./imgs/img_face.jpg" class="img-fluid face wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2s" width="25px" alt="">
+                 <img src="./imgs/img_you.jpg" class="img-fluid you wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2.5s" width="25px" alt="">
+                 <img src="./imgs/img_ins.jpg" class="img-fluid ins wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="3s" width="25px" alt="">
+               </div>
+               <div class="col-2"></div>
+              </div>
+             </div>
+            </div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2s">2018 Highlands Coffee</div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.5s"><i class="ti-location-arrow me-2"></i> Đăng ký để nhận bản tin</div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="3s"><i class="ti-email me-2"></i> ssdssdq@highlandscoffee.com.vn</div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar_menu container-fluid">
+    <div class="row">
+     <div class="col-1"></div>
+     <div class="col-lg-2">
+       <h1 class="py-3">CÀ PHÊ</h1>
+       <p class="chu_text">Cà Phê Phin</p>
+       <p class="chu_text py-2">PhinDi</p>
+       <p class="chu_text">Cà Phê Expresso</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">FREEZE</h1>
+       <p class="chu_text">Freeze Cà Phê Phin</p>
+       <p class="chu_text py-2">Freeze Không Cà Phê</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">TRÀ</h1>
+       <p class="chu_text">Trà Thạch Đào</p>
+       <p class="chu_text py-2">Trà Thanh Đào</p>
+       <p class="chu_text">Trà Thạch Vải</p>
+       <p class="chu_text py-2">Trà Sen Vàng Mới</p>
+       <p class="chu_text">Trà Nhiệt Đới (MỚI)</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">KHÁC</h1>
+       <p class="chu_text">Bánh Ngọt</p>
+       <p class="chu_text py-2">Merchandise</p>
+       <p class="chu_text">Cà Phê Đóng Gói</p>
+       <p class="chu_text pt-2">Thực Đơn Giao Hàng</p>
+     </div>
+     <div class="col-lg-2">
+       <img src="./imgs/img_cafe.jpg" class="img-fluid py-3 img-cafe" alt="">
+     </div>
+     <div class="col-1"></div>
+    </div>
+ </div>
+
+  <div class="navbar_menu2 container-fluid">
+    <div class="row">
+     <div class="col-lg-12">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-3">
+             <h1 class="py-3">NGUỒN GỐC</h1>
+           </div>
+           <div class="col-lg-3">
+             <h1 class="py-3">DỊCH VỤ</h1>
+           </div>
+           <div class="col-lg-3">
+             <h1 class="py-3">NGHỀ NGHIỆP</h1>
+           </div>
+           <div class="col-lg-3">
+             <img src="./imgs/img_thuonghieu.jpg" class="img-fluid py-3 img-cafe" alt="">
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+   </div>
+
+   </div>
+
+
+   <div class="main2">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-color-header">
+          <div class="container-xl headder">
+           <div>
+            <img src="./imgs/logo.jpg" alt="" class="size-img img-fluid img_logo"   width="100" height="100">
+           </div>
+            <div>
+              <form class="d-flex justify-content-around align-items-center form menu-thunho" role="search">
+                  <a class="form_chinh an">
+                      <input class="form-control me-2 tukhoa an" type="search" placeholder="Từ khóa" aria-label="Search">
+                      <i class="ti-search timkiem an"></i>
+                  </a>
+                  <img src="./imgs/logo_vietnam.jpg" class="vietnam" alt="">
+                  <img src="./imgs/logo_american.jpg" class="vietnam" alt="">
+                  <div >
+                    <button class="navbar-toggler icon-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                      <span class="navbar-toggler-icon "></span>
+                    </button>
+                  </div>
+                </form>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase chu-header fluid-header an">
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header quancaphe" >Quán Cà Phê</a>
+                  </li>
+                  <li class="nav-item thucdonli">
+                    <a class="nav-link thuoctinh-header thucdon" href="#">Thực Đơn</a>
+                  </li>
+                  <li class="nav-item" id="tintucnew">
+                    <a class="nav-link thuoctinh-header tintucnew" href="#">Tin Tức</a>
+                  </li>
+                  <li class="nav-item" id="congdongnew">
+                    <a class="nav-link thuoctinh-header congdongnew" href="#">Cộng đồng</a>
+                  </li>
+                  <li class="nav-item chungtoi">
+                    <a class="nav-link thuoctinh-header vechungtoinew" href="#">Về Chúng Tôi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header" href="https://careers.highlandscoffee.com.vn/vi/trang-chu/">Nghề Nghiệp</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header muangay" href="#">Mua Ngay</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="menu-drop2">
+          <div class="container-fluid">
+           <div class="row">
+            <div class="col-md-6 col-lg-5 col-sm-7 col-10 menu-list2">
+             <div class="img-fluid nut-x">
+              <i class="ti-close"></i>
+             </div>
+              <div class="list-group danhsach">
+                
+                <div id="accordion lop">
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu quancaphe" >
+                        QUÁN CÀ PHÊ
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn thucdonli" >
+                       THỰC ĐƠN
+                    </a>
+                    <a class="dropdown-toggle btn" data-bs-toggle="collapse" href="#thucdon2"></a>
+                    </div>
+                    <div id="thucdon2" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body py-0 xam">
+                        <div id="accordion">
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#caphe2">
+                                CÀ PHÊ
+                              </a>
+                            </div>
+                            <div id="caphe2" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Phin</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">PhinDi</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Espresso</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#freeze2">
+                                FREEZE
+                              </a>
+                            </div>
+                            <div id="freeze2" class="collapse" data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Freeze Cà Phê Phin</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Freeze Không Cà Phê</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle ten" data-bs-toggle="collapse" href="#tra2">
+                                TRÀ
+                              </a>
+                            </div>
+                            <div id="tra2" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Sen Vàng Mới</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thạch Đào</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thanh Đào</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thạch Vải</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Nhiệt Đới (MỚI!)</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#khac2">
+                                KHÁC
+                              </a>
+                            </div>
+                            <div id="khac2" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Bánh Ngọt</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Merchandise</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Đóng Gói</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Thực Đơn Giao Hàng</a>
+                               </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn tintucnew">
+                         TIN TỨC
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu congdongnew">
+                        CỘNG ĐỒNG
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn vechungtoinew" >
+                       VỀ CHÚNG TÔI
+                    </a>
+                    <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#vechungtoi2"></a>
+                    </div>
+                    <div id="vechungtoi2" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body py-0 xam">
+                       <div class="list-group list-group-flush py-0">
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">NGUỒN GỐC</a>
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">DỊCH VỤ</a>
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">NGHỀ NGHIỆP</a>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu" href="https://careers.highlandscoffee.com.vn/vi/trang-chu/">
+                        NGHỀ NGHIỆP
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu muangay">
+                        MUA NGAY
+                      </a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="timkiemtukhoa">
+                  <input type="text" class="my-3 mx-auto d-block input-list" placeholder="  Từ khóa">
+                </div>
+              </div>
+            </div>
+           </div>
+          </div>
+        </div>
+  </header>
+  <div class="container mt-5">
+    <h4 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="=1s">TRÁCH NHIỆM CỘNG ĐỒNG</h4>
+  </div>
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_3/img__1.jpg" class="img-fluid mb-3 img-cafe img-hover wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="=1s">ĐÊM TRĂNG DIỆU KỲ CÙNG HIGHLANDS COFFEE</p>
+      </div>
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_3/img__2.jpg" class="img-fluid mb-3 img-cafe img-hover  wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="=1s">MANG CHÚT YÊU THƯƠNG MÁT LÀNH </p>
+      </div>
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_3/img__3.jpg" class="img-fluid mb-3 img-cafe img-hover  wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="=1s">HIẾN MÁU NHÂN ĐẠO THƯỜNG NIÊN</p>
+      </div>
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_3/img__4.jpg" class="img-fluid mb-3 img-cafe img-hover  wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="=1s">TRAO TẶNG BÁNH - TRỌN THƯƠNG YÊU</p>
+      </div>
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_3/img__5.png" class="img-fluid mb-3 img-cafe img-hover  wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="=1s">HIGHLANDS COFFEE CÙNG Ý TƯỞNG</p>
+      </div>
+      <div class="col-lg-4 col-6 mb-5">
+        <img src="./imgs_3/img__6.jpg" class="img-fluid mb-3 img-cafe img-hover  wow flipInX" data-wow-duration="1s" data-wow-delay="=1s" alt="">
+        <p class="chu_trang2 wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="=1s">TRUNG THU YÊU THƯƠNG - LỚP HỌC CHO EM 2017</p>
+      </div>
+    </div>
+  </div>
+  <div class="container d-flex justify-content-center align-items-center">
+    <button type="button" class="btn text-danger border border-danger nut-btn wow rollIn"  data-wow-duration="1s" data-wow-delay="=1s">XEM THÊM</button>
+  </div>
+
+  <div class="container-fluid footer mt-5">
+    <div class="row">
+      <div class="col-lg-11">
+         <div class="container-fluid ">
+          <div class="row ">
+            <div class="col-lg-3 d-flex align-items-center">
+             <div class="container-fluid">
+              <div class="row">
+               <div class="col-2"></div>
+               <div class="col-lg-6 mt-2 mt-lg-0 tonghop">
+                 <img src="./imgs/img_face.jpg" class="img-fluid face wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2s" width="25px" alt="">
+                 <img src="./imgs/img_you.jpg" class="img-fluid you wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2.5s" width="25px" alt="">
+                 <img src="./imgs/img_ins.jpg" class="img-fluid ins wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="3s" width="25px" alt="">
+               </div>
+               <div class="col-2"></div>
+              </div>
+             </div>
+            </div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2s">2018 Highlands Coffee</div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.5s"><i class="ti-location-arrow me-2"></i> Đăng ký để nhận bản tin</div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="3s"><i class="ti-email me-2"></i> ssdssdq@highlandscoffee.com.vn</div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar_menu container-fluid">
+    <div class="row">
+     <div class="col-1"></div>
+     <div class="col-lg-2">
+       <h1 class="py-3">CÀ PHÊ</h1>
+       <p class="chu_text">Cà Phê Phin</p>
+       <p class="chu_text py-2">PhinDi</p>
+       <p class="chu_text">Cà Phê Expresso</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">FREEZE</h1>
+       <p class="chu_text">Freeze Cà Phê Phin</p>
+       <p class="chu_text py-2">Freeze Không Cà Phê</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">TRÀ</h1>
+       <p class="chu_text">Trà Thạch Đào</p>
+       <p class="chu_text py-2">Trà Thanh Đào</p>
+       <p class="chu_text">Trà Thạch Vải</p>
+       <p class="chu_text py-2">Trà Sen Vàng Mới</p>
+       <p class="chu_text">Trà Nhiệt Đới (MỚI)</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">KHÁC</h1>
+       <p class="chu_text">Bánh Ngọt</p>
+       <p class="chu_text py-2">Merchandise</p>
+       <p class="chu_text">Cà Phê Đóng Gói</p>
+       <p class="chu_text pt-2">Thực Đơn Giao Hàng</p>
+     </div>
+     <div class="col-lg-2">
+       <img src="./imgs/img_cafe.jpg" class="img-fluid py-3 img-cafe" alt="">
+     </div>
+     <div class="col-1"></div>
+    </div>
+ </div>
+
+  <div class="navbar_menu2 container-fluid">
+    <div class="row">
+     <div class="col-lg-12">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-3">
+             <h1 class="py-3">NGUỒN GỐC</h1>
+           </div>
+           <div class="col-lg-3">
+             <h1 class="py-3">DỊCH VỤ</h1>
+           </div>
+           <div class="col-lg-3">
+             <h1 class="py-3">NGHỀ NGHIỆP</h1>
+           </div>
+           <div class="col-lg-3">
+             <img src="./imgs/img_thuonghieu.jpg" class="img-fluid py-3 img-cafe" alt="">
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+   </div>
+
+   </div>
+
+   <div class="main3">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-color-header">
+          <div class="container-xl headder">
+           <div>
+            <img src="./imgs/logo.jpg" alt="" class="size-img img-fluid img_logo"   width="100" height="100">
+           </div>
+            <div>
+              <form class="d-flex justify-content-around align-items-center form menu-thunho" role="search">
+                  <a class="form_chinh an">
+                      <input class="form-control me-2 tukhoa an" type="search" placeholder="Từ khóa" aria-label="Search">
+                      <i class="ti-search timkiem an"></i>
+                  </a>
+                  <img src="./imgs/logo_vietnam.jpg" class="vietnam" alt="">
+                  <img src="./imgs/logo_american.jpg" class="vietnam" alt="">
+                  <div >
+                    <button class="navbar-toggler icon-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                      <span class="navbar-toggler-icon "></span>
+                    </button>
+                  </div>
+                </form>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase chu-header fluid-header an">
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header quancaphe" >Quán Cà Phê</a>
+                  </li>
+                  <li class="nav-item thucdonli">
+                    <a class="nav-link thuoctinh-header thucdon" href="#">Thực Đơn</a>
+                  </li>
+                  <li class="nav-item" id="tintucnew">
+                    <a class="nav-link thuoctinh-header tintucnew" href="#">Tin Tức</a>
+                  </li>
+                  <li class="nav-item" id="congdongnew">
+                    <a class="nav-link thuoctinh-header congdongnew" href="#">Cộng đồng</a>
+                  </li>
+                  <li class="nav-item chungtoi">
+                    <a class="nav-link thuoctinh-header vechungtoinew" href="#">Về Chúng Tôi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header" href="https://careers.highlandscoffee.com.vn/vi/trang-chu/">Nghề Nghiệp</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header muangay" href="#">Mua Ngay</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="menu-drop3">
+          <div class="container-fluid">
+           <div class="row">
+            <div class="col-md-6 col-lg-5 col-sm-7 col-10 menu-list3">
+             <div class="img-fluid nut-x">
+              <i class="ti-close"></i>
+             </div>
+              <div class="list-group danhsach">
+                
+                <div id="accordion lop">
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu quancaphe" >
+                        QUÁN CÀ PHÊ
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn thucdonli" >
+                       THỰC ĐƠN
+                    </a>
+                    <a class="dropdown-toggle btn" data-bs-toggle="collapse" href="#thucdon3"></a>
+                    </div>
+                    <div id="thucdon3" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body py-0 xam">
+                        <div id="accordion">
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#caphe3">
+                                CÀ PHÊ
+                              </a>
+                            </div>
+                            <div id="caphe3" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Phin</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">PhinDi</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Espresso</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#freeze3">
+                                FREEZE
+                              </a>
+                            </div>
+                            <div id="freeze3" class="collapse" data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Freeze Cà Phê Phin</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Freeze Không Cà Phê</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle ten" data-bs-toggle="collapse" href="#tra3">
+                                TRÀ
+                              </a>
+                            </div>
+                            <div id="tra3" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Sen Vàng Mới</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thạch Đào</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thanh Đào</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thạch Vải</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Nhiệt Đới (MỚI!)</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#khac3">
+                                KHÁC
+                              </a>
+                            </div>
+                            <div id="khac3" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Bánh Ngọt</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Merchandise</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Đóng Gói</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Thực Đơn Giao Hàng</a>
+                               </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn tintucnew">
+                         TIN TỨC
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu congdongnew">
+                        CỘNG ĐỒNG
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn vechungtoinew" >
+                       VỀ CHÚNG TÔI
+                    </a>
+                    <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#vechungtoi3"></a>
+                    </div>
+                    <div id="vechungtoi3" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body py-0 xam">
+                       <div class="list-group list-group-flush py-0">
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">NGUỒN GỐC</a>
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">DỊCH VỤ</a>
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">NGHỀ NGHIỆP</a>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu" href="https://careers.highlandscoffee.com.vn/vi/trang-chu/">
+                        NGHỀ NGHIỆP
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu muangay">
+                        MUA NGAY
+                      </a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="timkiemtukhoa">
+                  <input type="text" class="my-3 mx-auto d-block input-list" placeholder="  Từ khóa">
+                </div>
+              </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      
+  </header>
+  
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-8">
+        <h4 class="mb-3">CÀ PHÊ</h4>
+        <p class="chu_main3">Sự kết hợp hoàn hảo giữa hạt cà phê Robusta & Arabica thượng hạng được trồng trên những vùng cao nguyên Việt Nam màu mỡ, qua những bí quyết rang xay độc đáo, Highlands Coffee chúng tôi tự hào giới thiệu những dòng sản phẩm Cà phê mang hương vị đậm đà và tinh tế.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container ">
+    <div class="row img_cham">
+      <div class="col-lg-8">
+        <div class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container-fluid mb-5">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./img_caphe/img_americano.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">AMERICANO</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 29,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_caphe/img_bacxiu.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                     <h5 data-wow-duration="1s" data-wow-delay="1s">BẠC XỈU ĐÁ</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 29,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_caphe/img_cafedennong.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">CÀ PHÊ ĐEN NÓNG</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 29,000 VND</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container-fluid mb-5">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./img_caphe/img_capuchino.jpg" class="img-fluid img-cafe img_cham wow wobble"  data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 >CAPUCHINO</h5>
+                    <p class="chu_gia wow bounceInDown "  data-wow-duration="1s" data-wow-delay="1s">Giá : 29,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_caphe/img_latte.jpg" class="img-fluid img-cafe img_cham wow wobble"  data-wow-duration="1s" data-wow-delay="1s"  alt="">
+                    <h5 >LATTE</h5>
+                    <p class="chu_gia wow bounceInDown "  data-wow-duration="1s" data-wow-delay="1s">Giá : 29,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_caphe/img_phindikemsua.jpg" class="img-fluid img-cafe img_cham wow wobble"  data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 >PHINDI KEM SỮA</h5>
+                    <p class="chu_gia  wow bounceInDown"  data-wow-duration="1s" data-wow-delay="1s">Giá : 29,000 VND</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-8">
+        <h4 class="mb-3">FREEZE</h4>
+        <p class="chu_main3">Sảng khoái với thức uống đá xay phong cách Việt. Freeze là thức uống đá xay mát lạnh được pha chế từ những nguyên liệu thuần túy của Việt Nam.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container ">
+    <div class="row img_cham">
+      <div class="col-lg-8">
+        <div class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container-fluid mb-5">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./img_freeze/img_carmel.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">CARAMEL FREEZE</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 55,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_freeze/img_classic.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                     <h5 data-wow-duration="1s" data-wow-delay="1s">CLASSIC PHIN FREEZE</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 55,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_freeze/img_cream.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">COOKIES & CREAM</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 55,000 VND</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container-fluid mb-5">
+                <div class="row img_cham">
+                  <div class="col-4">
+                    <img src="./img_freeze/img_phin.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">CARAMEL PHIN FREEZE</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 55,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_freeze/img_socola.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">FREEZE SOCOLA</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 55,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_freeze/img_traxanh.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">FREEZE TRA XANH</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 55,000 VND</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+       
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-8">
+        <h4 class="mb-3">TRÀ</h4>
+        <p class="chu_main3">Hương vị tự nhiên, thơm ngon của Trà Việt với phong cách hiện đại tại Highlands Coffee sẽ giúp bạn gợi mở vị giác của bản thân và tận hưởng một cảm giác thật khoan khoái, tươi mới.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container ">
+    <div class="row img_cham">
+      <div class="col-lg-8">
+        <div class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container-fluid mb-5">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./img_tra/img_cunang.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">TRÀ CỦ NĂNG</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 45,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_tra/img_daudo.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                     <h5 data-wow-duration="1s" data-wow-delay="1s">TRÀ ĐẬU ĐỎ</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 45,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_tra/img_senvang.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">TRÀ SEN VÀNG</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 45,000 VND</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container-fluid mb-5">
+                <div class="row img_cham">
+                  <div class="col-4">
+                    <img src="./img_tra/img_thachdao.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">TRÀ THẠCH ĐÀO</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 45,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_tra/img_thachvai.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">TRÀ THẠCH VẢI</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 45,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_tra/img_thanhdao.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">TRÀ THANH ĐÀO</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 45,000 VND</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-8">
+        <h4 class="mb-3">KHÁC</h4>
+        <p class="chu_main3">Sẽ càng ngon miệng hơn khi bạn kết hợp đồ uống với những chiếc bánh ngọt thơm ngon được làm thủ công hàng ngày ngay tại bếp bánh của Highlands Coffee, và cũng đừng quên sắm cho mình bộ bí kíp pha cà phê tại nhà gồm Phin inox, ly sứ Mosaic và cà phê gói Truyền thống mỗi khi có thời gian rảnh rỗi nhé.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container ">
+    <div class="row img_cham">
+      <div class="col-lg-8">
+        <div class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container-fluid mb-5">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./img_khac/img_caphehoatan.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">CÀ PHÊ HÒA TAN</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 58,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_khac/img_culi.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                     <h5 data-wow-duration="1s" data-wow-delay="1s">CULI 200GR</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 68,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_khac/img_disan.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">DI SẢN 200GR</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 100,000 VND</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container-fluid mb-5">
+                <div class="row img_cham">
+                  <div class="col-4">
+                    <img src="./img_khac/img_moka.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">MOKA 200GR</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 58,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_khac/img_sanhdieu.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">SÀNH ĐIỆU 200GR</h5>
+                    <p class="chu_gia  wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 38,000 VND</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./img_khac/img_truyenthong.jpg" class="img-fluid img-cafe img_cham wow wobble" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <h5 data-wow-duration="1s" data-wow-delay="1s">TRUYỀN THỐNG 1KG</h5>
+                    <p class="chu_gia wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Giá : 72,000 VND</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+
+  <div class="navbar_menu container-fluid">
+    <div class="row">
+     <div class="col-1"></div>
+     <div class="col-lg-2">
+       <h1 class="py-3">CÀ PHÊ</h1>
+       <p class="chu_text">Cà Phê Phin</p>
+       <p class="chu_text py-2">PhinDi</p>
+       <p class="chu_text">Cà Phê Expresso</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">FREEZE</h1>
+       <p class="chu_text">Freeze Cà Phê Phin</p>
+       <p class="chu_text py-2">Freeze Không Cà Phê</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">TRÀ</h1>
+       <p class="chu_text">Trà Thạch Đào</p>
+       <p class="chu_text py-2">Trà Thanh Đào</p>
+       <p class="chu_text">Trà Thạch Vải</p>
+       <p class="chu_text py-2">Trà Sen Vàng Mới</p>
+       <p class="chu_text">Trà Nhiệt Đới (MỚI)</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">KHÁC</h1>
+       <p class="chu_text">Bánh Ngọt</p>
+       <p class="chu_text py-2">Merchandise</p>
+       <p class="chu_text">Cà Phê Đóng Gói</p>
+       <p class="chu_text pt-2">Thực Đơn Giao Hàng</p>
+     </div>
+     <div class="col-lg-2">
+       <img src="./imgs/img_cafe.jpg" class="img-fluid py-3 img-cafe" alt="">
+     </div>
+     <div class="col-1"></div>
+    </div>
+ </div>
+
+  <div class="navbar_menu2 container-fluid">
+    <div class="row">
+     <div class="col-lg-12">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-3">
+             <h1 class="py-3">NGUỒN GỐC</h1>
+           </div>
+           <div class="col-lg-3">
+             <h1 class="py-3">DỊCH VỤ</h1>
+           </div>
+           <div class="col-lg-3">
+             <h1 class="py-3">NGHỀ NGHIỆP</h1>
+           </div>
+           <div class="col-lg-3">
+             <img src="./imgs/img_thuonghieu.jpg" class="img-fluid py-3 img-cafe" alt="">
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+   </div>
+
+   <div class="container-fluid footer mt-5">
+    <div class="row">
+      <div class="col-lg-11">
+         <div class="container-fluid ">
+          <div class="row ">
+            <div class="col-lg-3 d-flex align-items-center">
+             <div class="container-fluid">
+              <div class="row">
+               <div class="col-2"></div>
+               <div class="col-lg-6 mt-2 mt-lg-0 tonghop">
+                 <img src="./imgs/img_face.jpg" class="img-fluid face wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2s" width="25px" alt="">
+                 <img src="./imgs/img_you.jpg" class="img-fluid you wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2.5s" width="25px" alt="">
+                 <img src="./imgs/img_ins.jpg" class="img-fluid ins wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="3s" width="25px" alt="">
+               </div>
+               <div class="col-2"></div>
+              </div>
+             </div>
+            </div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2s">2018 Highlands Coffee</div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.5s"><i class="ti-location-arrow me-2"></i> Đăng ký để nhận bản tin</div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="3s"><i class="ti-email me-2"></i> ssdssdq@highlandscoffee.com.vn</div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </div>
+
+   </div>
+
+   <div class="main4">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-color-header">
+          <div class="container-xl headder">
+           <div>
+            <img src="./imgs/logo.jpg" alt="" class="size-img img-fluid img_logo"   width="100" height="100">
+           </div>
+            <div>
+              <form class="d-flex justify-content-around align-items-center form menu-thunho" role="search">
+                  <a class="form_chinh an">
+                      <input class="form-control me-2 tukhoa an" type="search" placeholder="Từ khóa" aria-label="Search">
+                      <i class="ti-search timkiem an"></i>
+                  </a>
+                  <img src="./imgs/logo_vietnam.jpg" class="vietnam" alt="">
+                  <img src="./imgs/logo_american.jpg" class="vietnam" alt="">
+                  <div >
+                    <button class="navbar-toggler icon-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                      <span class="navbar-toggler-icon "></span>
+                    </button>
+                  </div>
+                </form>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase chu-header fluid-header an">
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header quancaphe" >Quán Cà Phê</a>
+                  </li>
+                  <li class="nav-item thucdonli">
+                    <a class="nav-link thuoctinh-header thucdon" href="#">Thực Đơn</a>
+                  </li>
+                  <li class="nav-item" id="tintucnew">
+                    <a class="nav-link thuoctinh-header tintucnew" href="#">Tin Tức</a>
+                  </li>
+                  <li class="nav-item" id="congdongnew">
+                    <a class="nav-link thuoctinh-header congdongnew" href="#">Cộng đồng</a>
+                  </li>
+                  <li class="nav-item chungtoi">
+                    <a class="nav-link thuoctinh-header" href="#">Về Chúng Tôi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header" href="https://careers.highlandscoffee.com.vn/vi/trang-chu/">Nghề Nghiệp</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header muangay" href="#">Mua Ngay</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="menu-drop4">
+          <div class="container-fluid">
+           <div class="row">
+            <div class="col-md-6 col-lg-5 col-sm-7 col-10 menu-list4">
+             <div class="img-fluid nut-x">
+              <i class="ti-close"></i>
+             </div>
+              <div class="list-group danhsach">
+                
+                <div id="accordion lop">
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu quancaphe">
+                        QUÁN CÀ PHÊ
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn thucdonli" >
+                       THỰC ĐƠN
+                    </a>
+                    <a class="dropdown-toggle btn" data-bs-toggle="collapse" href="#thucdon4"></a>
+                    </div>
+                    <div id="thucdon4" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body py-0 xam">
+                        <div id="accordion">
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#caphe4">
+                                CÀ PHÊ
+                              </a>
+                            </div>
+                            <div id="caphe4" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Phin</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">PhinDi</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Espresso</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#freeze4">
+                                FREEZE
+                              </a>
+                            </div>
+                            <div id="freeze4" class="collapse" data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Freeze Cà Phê Phin</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Freeze Không Cà Phê</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle ten" data-bs-toggle="collapse" href="#tra4">
+                                TRÀ
+                              </a>
+                            </div>
+                            <div id="tra4" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Sen Vàng Mới</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thạch Đào</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thanh Đào</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thạch Vải</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Nhiệt Đới (MỚI!)</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#khac4">
+                                KHÁC
+                              </a>
+                            </div>
+                            <div id="khac4" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Bánh Ngọt</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Merchandise</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Đóng Gói</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Thực Đơn Giao Hàng</a>
+                               </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn tintucnew">
+                         TIN TỨC
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu congdongnew">
+                        CỘNG ĐỒNG
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn" >
+                       VỀ CHÚNG TÔI
+                    </a>
+                    <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#vechungtoi4"></a>
+                    </div>
+                    <div id="vechungtoi4" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body py-0 xam">
+                       <div class="list-group list-group-flush py-0">
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">NGUỒN GỐC</a>
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">DỊCH VỤ</a>
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">NGHỀ NGHIỆP</a>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu" href="https://careers.highlandscoffee.com.vn/vi/trang-chu/">
+                        NGHỀ NGHIỆP
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu muangay">
+                        MUA NGAY
+                      </a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="timkiemtukhoa">
+                  <input type="text" class="my-3 mx-auto d-block input-list" placeholder="  Từ khóa">
+                </div>
+              </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      
+  </header>
+
+  <div class="navbar_menu container-fluid">
+    <div class="row">
+     <div class="col-1"></div>
+     <div class="col-lg-2">
+       <h1 class="py-3">CÀ PHÊ</h1>
+       <p class="chu_text">Cà Phê Phin</p>
+       <p class="chu_text py-2">PhinDi</p>
+       <p class="chu_text">Cà Phê Expresso</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">FREEZE</h1>
+       <p class="chu_text">Freeze Cà Phê Phin</p>
+       <p class="chu_text py-2">Freeze Không Cà Phê</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">TRÀ</h1>
+       <p class="chu_text">Trà Thạch Đào</p>
+       <p class="chu_text py-2">Trà Thanh Đào</p>
+       <p class="chu_text">Trà Thạch Vải</p>
+       <p class="chu_text py-2">Trà Sen Vàng Mới</p>
+       <p class="chu_text">Trà Nhiệt Đới (MỚI)</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">KHÁC</h1>
+       <p class="chu_text">Bánh Ngọt</p>
+       <p class="chu_text py-2">Merchandise</p>
+       <p class="chu_text">Cà Phê Đóng Gói</p>
+       <p class="chu_text pt-2">Thực Đơn Giao Hàng</p>
+     </div>
+     <div class="col-lg-2">
+       <img src="./imgs/img_cafe.jpg" class="img-fluid py-3 img-cafe" alt="">
+     </div>
+     <div class="col-1"></div>
+    </div>
+ </div>
+
+  <div class="navbar_menu2 container-fluid">
+    <div class="row">
+     <div class="col-lg-12">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-3">
+             <h1 class="py-3">NGUỒN GỐC</h1>
+           </div>
+           <div class="col-lg-3">
+             <h1 class="py-3">DỊCH VỤ</h1>
+           </div>
+           <div class="col-lg-3">
+             <h1 class="py-3">NGHỀ NGHIỆP</h1>
+           </div>
+           <div class="col-lg-3">
+             <img src="./imgs/img_thuonghieu.jpg" class="img-fluid py-3 img-cafe" alt="">
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+   </div>
+
+   <div class="container-fluid px-0 mx-0">
+    <div class="row px-0 mx-0">
+      <div class="col-lg-6 img_cham px-0 py-0 my-0">
+        <div class="container-fluid mt-lg-5 ms-xl-4 my-4 px-0 mx-0 px-0">
+          <div class="row px-0 mx-0">
+            <div class="col-lg-1 col-0"></div>
+            <div class="col-xl-11 col-12 wow bounceInLeft"  data-wow-duration="1s" data-wow-delay="1s">
+              <h4>NGUỒN GỐC</h4>
+              <p class="chu_main3 mt-2"> Highlands Coffee® được thành lập vào năm 1999, bắt nguồn từ tình yêu dành cho đất Việt cùng với cà phê và cộng đồng nơi đây. Ngay từ những ngày đầu tiên, mục tiêu của chúng mình là có thể phục vụ và góp phần phát triển cộng đồng bằng cách siết chặt thêm sự kết nối và sự gắn bó giữa người với người.</p>
+              <div class="container d-flex justify-content-center align-items-center mt-4">
+                <button type="button" class="btn text-danger border border-danger nut-btn wow rollIn"  data-wow-duration="1s" data-wow-delay="=1s">XEM THÊM</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 img_cham px-0 py-0 my-0">
+        <img src="./imgs_4/img_1.jpg"  data-wow-duration="1s" data-wow-delay="1s" class=" chieucao wow bounceIn" alt="">
+      </div>
+      <div class="col-lg-6 img_cham px-0 py-0 my-0">
+        <img src="./imgs_4/img_2.jpg"  data-wow-duration="1s" data-wow-delay="1s" class="chieucao wow bounceIn" alt="">
+      </div>
+      <div class="col-lg-6 img_cham px-0 py-0 my-0 mau_main4">
+        <div class="container-fluid mt-xl-5  my-4  ">
+          <div class="row px-0 mx-0">
+            <div class="col-xl-2 col-0"></div>
+            <div class="col-xl-9 col-12 wow bounceInRight"  data-wow-duration="1s" data-wow-delay="1s">
+              <h4 class="text-white d-flex justify-content-end">DỊCH VỤ</h4>
+              <p class="chu_main3 mt-2">Highlands Coffee® là không gian của chúng mình nên mọi thứ ở đây đều vì sự thoải mái của chúng mình. Đừng giữ trong lòng, hãy chia sẻ với chúng mình điều bạn mong muốn để cùng nhau giúp Highlands Coffee® trở nên tuyệt vời.</p>
+              <div class="container d-flex justify-content-center align-items-center mt-4">
+                <button type="button" class="btn text-danger border border-danger nut-btn wow rollIn"  data-wow-duration="1s" data-wow-delay="=1s">XEM THÊM</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 img_cham px-0 py-0 my-0 mau2_main4">
+        <div class="container-fluid mt-lg-5 ms-xl-4 my-4 px-0">
+          <div class="row px-0 mx-0">
+            <div class="col-lg-1 col-0"></div>
+            <div class="col-xl-11 col-12 wow bounceInLeft"  data-wow-duration="1s" data-wow-delay="1s">
+              <h4 class="text-white">NGHỀ NGHIỆP</h4>
+              <p class="chu_main3 mt-2">Là điểm hội tụ của cộng đồng, Highlands Coffee® luôn tìm kiếm những thành viên mới với mong muốn không ngừng hoàn thiện một không gian dành cho tất cả mọi người. Chúng mình luôn chào đón bạn trở thành một phần của Highlands Coffee® để cùng nhau siết chặt thêm những kết nối và sự gắn bó giữa người với người.</p>
+              <div class="container d-flex justify-content-center align-items-center mt-4">
+                <button type="button" class="btn text-danger border border-white text-white nut-btn wow rollIn"  data-wow-duration="1s" data-wow-delay="=1s">XEM THÊM</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 img_cham px-0 py-0 my-0">
+        <img src="./imgs_4/img_3.jpg" data-wow-duration="1s" data-wow-delay="1s" class=" chieucao wow bounceIn" height="100%" alt="">
+      </div>
+    </div>
+   </div>
+  
+   <div class="container-fluid footer ">
+    <div class="row">
+      <div class="col-lg-11">
+         <div class="container-fluid ">
+          <div class="row ">
+            <div class="col-lg-3 d-flex align-items-center">
+             <div class="container-fluid">
+              <div class="row">
+               <div class="col-2"></div>
+               <div class="col-lg-6 mt-2 mt-lg-0 tonghop">
+                 <img src="./imgs/img_face.jpg" class="img-fluid face wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2s" width="25px" alt="">
+                 <img src="./imgs/img_you.jpg" class="img-fluid you wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2.5s" width="25px" alt="">
+                 <img src="./imgs/img_ins.jpg" class="img-fluid ins wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="3s" width="25px" alt="">
+               </div>
+               <div class="col-2"></div>
+              </div>
+             </div>
+            </div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2s">2018 Highlands Coffee</div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.5s"><i class="ti-location-arrow me-2"></i> Đăng ký để nhận bản tin</div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="3s"><i class="ti-email me-2"></i> ssdssdq@highlandscoffee.com.vn</div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </div>
+
+   </div>
+
+   <div class="main5">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-color-header">
+          <div class="container-xl headder">
+           <div>
+            <img src="./imgs/logo.jpg" alt="" class="size-img img-fluid img_logo"   width="100" height="100">
+           </div>
+            <div>
+              <form class="d-flex justify-content-around align-items-center form menu-thunho" role="search">
+                  <a class="form_chinh an">
+                      <input class="form-control me-2 tukhoa an" type="search" placeholder="Từ khóa" aria-label="Search">
+                      <i class="ti-search timkiem an"></i>
+                  </a>
+                  <img src="./imgs/logo_vietnam.jpg" class="vietnam" alt="">
+                  <img src="./imgs/logo_american.jpg" class="vietnam" alt="">
+                  <div >
+                    <button class="navbar-toggler icon-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                      <span class="navbar-toggler-icon "></span>
+                    </button>
+                  </div>
+                </form>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase chu-header fluid-header an">
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header quancaphe" >Quán Cà Phê</a>
+                  </li>
+                  <li class="nav-item thucdonli">
+                    <a class="nav-link thuoctinh-header thucdon" href="#">Thực Đơn</a>
+                  </li>
+                  <li class="nav-item" id="tintucnew">
+                    <a class="nav-link thuoctinh-header tintucnew" href="#">Tin Tức</a>
+                  </li>
+                  <li class="nav-item" id="congdongnew">
+                    <a class="nav-link thuoctinh-header congdongnew" href="#">Cộng đồng</a>
+                  </li>
+                  <li class="nav-item chungtoi">
+                    <a class="nav-link thuoctinh-header" href="#">Về Chúng Tôi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header" href="https://careers.highlandscoffee.com.vn/vi/trang-chu/">Nghề Nghiệp</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link thuoctinh-header muangay" href="#">Mua Ngay</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="menu-drop5">
+          <div class="container-fluid">
+           <div class="row">
+            <div class="col-md-6 col-lg-5 col-sm-7 col-10 menu-list5">
+             <div class="img-fluid nut-x">
+              <i class="ti-close"></i>
+             </div>
+              <div class="list-group danhsach">
+                
+                <div id="accordion lop">
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu quancaphe">
+                        QUÁN CÀ PHÊ
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn thucdonli" >
+                       THỰC ĐƠN
+                    </a>
+                    <a class="dropdown-toggle btn" data-bs-toggle="collapse" href="#thucdon5"></a>
+                    </div>
+                    <div id="thucdon5" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body py-0 xam">
+                        <div id="accordion">
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#caphe5">
+                                CÀ PHÊ
+                              </a>
+                            </div>
+                            <div id="caphe5" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Phin</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">PhinDi</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Espresso</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#freeze5">
+                                FREEZE
+                              </a>
+                            </div>
+                            <div id="freeze5" class="collapse" data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Freeze Cà Phê Phin</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Freeze Không Cà Phê</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle ten" data-bs-toggle="collapse" href="#tra5">
+                                TRÀ
+                              </a>
+                            </div>
+                            <div id="tra5" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Sen Vàng Mới</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thạch Đào</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thanh Đào</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Thạch Vải</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Trà Nhiệt Đới (MỚI!)</a>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="card lop">
+                            <div class="card-header menu-thuoctinh-list xam lop ten">
+                              <a class="btn menu_chu dropdown-toggle" data-bs-toggle="collapse" href="#khac5">
+                                KHÁC
+                              </a>
+                            </div>
+                            <div id="khac5" class="collapse " data-bs-parent="#accordion">
+                              <div class="list-group list-group-flush py-0">
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Bánh Ngọt</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Merchandise</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Cà Phê Đóng Gói</a>
+                                <a href="#" class="list-group-item list-group-item-action  ten menu-thuoctinh-list py-3">Thực Đơn Giao Hàng</a>
+                               </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn tintucnew">
+                         TIN TỨC
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu congdongnew">
+                        CỘNG ĐỒNG
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="collapsed btn" >
+                       VỀ CHÚNG TÔI
+                    </a>
+                    <a class="btn dropdown-toggle" data-bs-toggle="collapse" href="#vechungtoi5"></a>
+                    </div>
+                    <div id="vechungtoi5" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body py-0 xam">
+                       <div class="list-group list-group-flush py-0">
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">NGUỒN GỐC</a>
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">DỊCH VỤ</a>
+                        <a href="#" class="list-group-item list-group-item-action xam ten menu-thuoctinh-list py-3">NGHỀ NGHIỆP</a>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu" href="https://careers.highlandscoffee.com.vn/vi/trang-chu/">
+                        NGHỀ NGHIỆP
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card lop">
+                    <div class="card-header menu-thuoctinh-list">
+                      <a class="btn menu_chu muangay">
+                        MUA NGAY
+                      </a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="timkiemtukhoa">
+                  <input type="text" class="my-3 mx-auto d-block input-list" placeholder="  Từ khóa">
+                </div>
+              </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      
+  </header>
+
+  <div class="navbar_menu container-fluid">
+    <div class="row">
+     <div class="col-1"></div>
+     <div class="col-lg-2">
+       <h1 class="py-3">CÀ PHÊ</h1>
+       <p class="chu_text">Cà Phê Phin</p>
+       <p class="chu_text py-2">PhinDi</p>
+       <p class="chu_text">Cà Phê Expresso</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">FREEZE</h1>
+       <p class="chu_text">Freeze Cà Phê Phin</p>
+       <p class="chu_text py-2">Freeze Không Cà Phê</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">TRÀ</h1>
+       <p class="chu_text">Trà Thạch Đào</p>
+       <p class="chu_text py-2">Trà Thanh Đào</p>
+       <p class="chu_text">Trà Thạch Vải</p>
+       <p class="chu_text py-2">Trà Sen Vàng Mới</p>
+       <p class="chu_text">Trà Nhiệt Đới (MỚI)</p>
+     </div>
+     <div class="col-lg-2">
+       <h1 class="py-3">KHÁC</h1>
+       <p class="chu_text">Bánh Ngọt</p>
+       <p class="chu_text py-2">Merchandise</p>
+       <p class="chu_text">Cà Phê Đóng Gói</p>
+       <p class="chu_text pt-2">Thực Đơn Giao Hàng</p>
+     </div>
+     <div class="col-lg-2">
+       <img src="./imgs/img_cafe.jpg" class="img-fluid py-3 img-cafe" alt="">
+     </div>
+     <div class="col-1"></div>
+    </div>
+ </div>
+
+  <div class="navbar_menu2 container-fluid">
+    <div class="row">
+     <div class="col-lg-12">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-3">
+             <h1 class="py-3">NGUỒN GỐC</h1>
+           </div>
+           <div class="col-lg-3">
+             <h1 class="py-3">DỊCH VỤ</h1>
+           </div>
+           <div class="col-lg-3">
+             <h1 class="py-3">NGHỀ NGHIỆP</h1>
+           </div>
+           <div class="col-lg-3">
+             <img src="./imgs/img_thuonghieu.jpg" class="img-fluid py-3 img-cafe" alt="">
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+   </div>
+
+   <div class="container my-5">
+    <h4 data-wow-duration="1s" data-wow-delay="2s" class="wow bounceInLeft">TÌM QUÁN CÀ PHÊ</h4>
+    <img src="./imgs/img_back.jpg" class="img-fluid my-2 wow bounceInRight img_cham" data-wow-duration="1s" data-wow-delay="2s" alt="">
+    </div>
+
+  <div class="container-fluid footer my-0">
+    <div class="row">
+      <div class="col-lg-11">
+         <div class="container-fluid ">
+          <div class="row ">
+            <div class="col-lg-3 d-flex align-items-center">
+             <div class="container-fluid">
+              <div class="row">
+               <div class="col-2"></div>
+               <div class="col-lg-6 mt-2 mt-lg-0 tonghop">
+                 <img src="./imgs/img_face.jpg" class="img-fluid face wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2s" width="25px" alt="">
+                 <img src="./imgs/img_you.jpg" class="img-fluid you wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2.5s" width="25px" alt="">
+                 <img src="./imgs/img_ins.jpg" class="img-fluid ins wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="3s" width="25px" alt="">
+               </div>
+               <div class="col-2"></div>
+              </div>
+             </div>
+            </div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2s">2018 Highlands Coffee</div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.5s"><i class="ti-location-arrow me-2"></i> Đăng ký để nhận bản tin</div>
+            <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="3s"><i class="ti-email me-2"></i> ssdssdq@highlandscoffee.com.vn</div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </div>
+   </div>
+
+   <div class="main6">
+       <header>
+          <nav class=" bg-main6">
+            <div class="container d-flex justify-content-between align-items-center ">
+             <div class="d-flex align-items-center justify-content-between fit">
+              <div class="nav_menumain6 dropdown">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon icon_menumain6"><i class="ti-menu"></i></span>
+                </button>
+                <ul class="dropdown-menu tab_menu" id="collapsibleNavbar">
+                  <li class="">
+                    <a class="dropdown-item text-white tab_menu2" href="#uudai">Deal đang diễn rara</a>
+                  </li>
+                  <li class="">
+                    <a class="dropdown-item text-white tab_menu2" href="#banchay">Sản phẩm bán chạy</a>
+                  </li>
+                  <li class="">
+                    <a class="dropdown-item text-white tab_menu2" href="#rangxay">Cà phê rang xay</a>
+                  </li>  
+                  <li class="">
+                    <a class="dropdown-item text-white tab_menu2" href="#uonglien">Cà phê uống liền</a>
+                  </li> 
+                </ul>
+              </div>
+              <img src="./img_6/images/img_logomain6.png" class="img-fluid my-3 img_logo" width="90" height="90" alt="">
+             </div>
+              <div class="dropdown andi">
+                <button type="button" class="btn btn-light text-muted doxuong doxuonglg d-flex justify-content-between align-items-center"  data-bs-toggle="dropdown">
+                Tìm sản phẩm .....
+                <span class="dropdown-toggle"></span>
+                </button>
+                <ul class="dropdown-menu doxuong2 doxuong2lg bg-color ">
+                <li><a class="dropdown-item text-white items" href="#uudai">Deal đang diễn ra</a></li>
+                <li><a class="dropdown-item text-white items" href="#banchay">Sản phẩm bán chạy</a></li>
+                <li><a class="dropdown-item text-white items" href="#rangxay">Cà phê rang xay</a></li>
+                <li><a class="dropdown-item text-white items" href="#uonglien">Cà phê uống liền</a></li>
+                </ul>
+                </div>
+                
+                <div class="dropdown modi">
+                  <button type="button" class="btn btn-light text-muted doxuong doxuonglg d-flex justify-content-between align-items-center"  data-bs-toggle="dropdown">
+                   Sản phẩm
+                  </button>
+                  <ul class="dropdown-menu doxuong2 doxuong2lg bg-color ">
+                  <li><a class="dropdown-item text-white items" href="#uudai">Deal hiện tại</a></li>
+                  <li><a class="dropdown-item text-white items" href="#banchay">Sản phẩm chạy</a></li>
+                  <li><a class="dropdown-item text-white items" href="#rangxay">Cà phê rang xay</a></li>
+                  <li><a class="dropdown-item text-white items" href="#uonglien">Cà phê uống liền</a></li>
+                  </ul>
+                  </div>
+              
+                  <div class="d-flex">
+                    <img src="./img_6/img_taikhoan.jpg" class="img-fluid" width="75" height="75" alt="">
+                    <img src="./img_6/img_giohang.jpg" class="img-fluid"  width="75" height="75" alt="">
+                  </div>
+                </div>
+          </nav>
+       </header>
+      <div class="border border-muted">
+        <div class="container">
+          <div class="row  my-3">
+            <div class="col-2 border border-light d-flex justify-content-center align-items-center ">
+              <p class="my-3  chu_main6 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">TRANG CHỦ</p>
+            </div>
+            <div class="col-2 border border-light d-flex justify-content-center align-items-center ">
+              <p class="my-3  chu_main6 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.5s">ƯU ĐÃI</p>
+            </div><div class="col-2 border border-light d-flex justify-content-center align-items-center ">
+              <p class="my-3  chu_main6 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="2s">FLASH SALE</p>
+            </div><div class="col-2 border border-light d-flex justify-content-center align-items-center ">
+              <p class="my-3  chu_main6 wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.5s">KHUYẾN MÃI</p>
+            </div><div class="col-2 border border-light d-flex justify-content-center align-items-center ">
+              <p class="my-3  chu_main6 wow bounceInRight" data-wow-duration="1s" data-wow-delay="3s">SẢN PHẨM</p>
+            </div><div class="col-2 border border-light d-flex justify-content-center align-items-center ">
+              <p class="my-3  chu_main6 wow bounceInRight" data-wow-duration="1s" data-wow-delay="3.5s">GIỚI THIỆU</p>
+            </div>
+          </div>
+         </div>
+      </div>
+      <div class="container bg-xoay my-3">
+       <div class="box">
+        <div class="chu_2land">FLASH SALE</div>
+        <span style="--i:1;"><img src="./img_6/img_1.webp" class="img-fluid wow bounceInRight" data-wow-duration="1s" data-wow-delay="1.4s" alt=""></span>
+        <span style="--i:2;"><img src="./img_6/img_2.webp" class="img-fluid wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.6s" alt=""></span>
+        <span style="--i:3;"><img src="./img_6/img_3.webp" class="img-fluid wow bounceInRight" data-wow-duration="1s" data-wow-delay="1.9s" alt=""></span>
+        <span style="--i:4;"><img src="./img_6/img_4.webp" class="img-fluid wow bounceInLeft" data-wow-duration="1s" data-wow-delay="2.2s" alt=""></span>
+        <span style="--i:5;"><img src="./img_6/img_5.webp" class="img-fluid wow bounceInLeft" data-wow-duration="1s" data-wow-delay="2.5s" alt=""></span>
+        <span style="--i:6;"><img src="./img_6/img_6.webp" class="img-fluid wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.8s" alt=""></span>
+        <span style="--i:7;"><img src="./img_6/img_7.webp" class="img-fluid wow bounceInLeft" data-wow-duration="1s" data-wow-delay="3s" alt=""></span>
+        <span style="--i:8;"><img src="./img_6/img_8.webp" class="img-fluid wow bounceInRight" data-wow-duration="1s" data-wow-delay="3.3s" alt=""></span>
+       </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row ">
+        <div class="col-4 col-lg-2 ">
+          <img src="./img_6/img_9.webp" class="img-fluid d-flex justify-content-center mx-auto poin wow bounceInDown" data-wow-duration="1s" data-wow-delay="3.5s" width="60" height="60" alt="">
+          <p class="d-flex justify-content-center align-items-center mt-2 chu_menuu wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Giao hàng</p>
+        </div><div class="col-4 col-lg-2 ">
+          <img src="./img_6/img_10.webp" class="img-fluid d-flex justify-content-center mx-auto poin wow bounceInDown" data-wow-duration="1s" data-wow-delay="3.8s" width="60" height="60" alt="">
+          <p class="d-flex justify-content-center align-items-center mt-2 chu_menuu wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Flash sale</p>
+        </div><div class="col-4 col-lg-2  ">
+          <img src="./img_6/img_11.webp" class="img-fluid d-flex justify-content-center mx-auto poin wow bounceInDown" data-wow-duration="1s" data-wow-delay="4s" width="60" height="60" alt="">
+          <p class="d-flex justify-content-center align-items-center mt-2 chu_menuu wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Bán chạy</p>
+        </div><div class="col-4 col-lg-2 mt-3 mt-lg-0 ">
+          <img src="./img_6/img_12.webp" class="img-fluid d-flex justify-content-center mx-auto poin wow bounceInDown" data-wow-duration="1s" data-wow-delay="4.3s" width="60" height="60" alt="">
+          <p class="d-flex justify-content-center align-items-center mt-2 chu_menuu wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Cửa hàng</p>
+        </div><div class="col-4 col-lg-2  mt-3 mt-lg-0">
+          <img src="./img_6/img_13.webp" class="img-fluid d-flex justify-content-center mx-auto poin wow bounceInDown" data-wow-duration="1s" data-wow-delay="4.5s" width="60" height="60" alt="">
+          <p class="d-flex justify-content-center align-items-center mt-2 chu_menuu wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Cách pha</p>
+        </div><div class="col-4 col-lg-2  mt-3 mt-lg-0">
+          <img src="./img_6/img_14.webp" class="img-fluid d-flex justify-content-center mx-auto poin wow bounceInDown" data-wow-duration="1s" data-wow-delay="4.8s" width="60" height="60" alt="">
+          <p class="d-flex justify-content-center align-items-center mt-2 chu_menuu wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Liên hệ</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5" id="uudai">
+      <h4 class="text-dark wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">Ưu đãi của bạn</h4>
+      <div class="row gx-3 mt-3">
+        <div class="col-lg-3 ">
+         <div class="border border-danger rounded dealnho wow flipInY" data-wow-duration="1s" data-wow-delay="2s">
+          <p class="chu_uudai my-3 ms-2">Voucher</p>
+          <p class="chu_uudai2 mb-5 ms-2">Voucher 20K áp cho đơn hàng từ 319.000đ Nhập/Lưu mã ngay.</p>
+          <button type="button" class="btn ms-2 mb-2  text-white btn_luu bg-main6 luu" onclick="myFunction2(this.id)" id="x1">Lưu</button>
+         </div>
+        </div>
+        <div class="col-lg-3 mt-2 mt-lg-0">
+         <div class="border border-danger rounded dealnho wow flipInY"  data-wow-duration="1s" data-wow-delay="2s">
+          <p class="chu_uudai my-3 ms-2">Ưu đãi </p>
+          <p class="chu_uudai2 mb-xl-4 mb-lg-5 mb-5 ms-2 ">Nhận ưu đãi tại quán khi mua hàng tại website chính hãng Highlands Coffee.</p>
+          <button type="button" class="btn ms-2 my-2 my-md-0 my-xl-0 mb-md-1 mb-xl-1 mb-lg-0 text-white btn_luu bg-main6 luu" onclick="myFunction2(this.id)" id="x2">Lưu</button>
+         </div>
+        </div>
+        <div class="col-lg-3 my-2 my-lg-0">
+          <div class="border border-danger rounded dealnho wow flipInY"  data-wow-duration="1s" data-wow-delay="2s">
+          <p class="chu_uudai my-3 ms-2">Giao hàng </p>
+          <p class="chu_uudai2 mb-5 ms-2">Đặt hàng online. Giao hàng tận nơi với phí ship chỉ từ 25K.</p>
+          <button type="button" class="btn ms-2 my-2 my-lg-0 text-white btn_luu bg-main6 luu" onclick="myFunction2(this.id)" id="x3">Lưu</button>
+          </div>
+        </div>
+        <div class="col-lg-3 my-2 my-lg-0">
+          <div class="border border-danger rounded dealnho wow flipInY"  data-wow-duration="1s" data-wow-delay="2s">
+          <p class="chu_uudai my-3 ms-2">Deal hời</p>
+          <p class="chu_uudai2 mb-4 ms-2">Giảm giá lên đến 30% với sản phẩm cà phê rang xay và nhiều sản phẩm cà phê đóng lon uống.</p>
+          <button type="button" class="btn ms-2 my-2 my-lg-0 text-white btn_luu bg-main6 luu" onclick="myFunction2(this.id)" id="x4">Lưu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row deal_main6 mx-0">
+        <div class="col-xl-3 d-flex align-items-center my-3 justify-content-center">
+          <p class="chu_deal  pe-3 d-flex justify-content-center align-items-center wow fadeInLeftBig"data-wow-duration="1s" data-wow-delay="2s">DEAL ĐANG DIỄN RA</p>
+        </div>
+        <div class="col-xl-7 col-6 d-flex align-items-center time justify-content-center justify-content-xl-start wow fadeInLeftBig"  data-wow-duration="1s" data-wow-delay="2.5s">
+          <span class="thoigian" id="ngay"></span>:<span id="gio" class="thoigian"></span>:<span id="phut" class="thoigian"></span>:<span id="giay" class="thoigian"></span>
+        </div>
+        <div class="col-xl-2 col-6 d-flex align-items-center justify-content-center ">
+          <button type="button" class="btn   text-white btn_luu bg-main6 mb-2 mb-xl-0 wow fadeInRightBig"  data-wow-duration="1s" data-wow-delay="3s">Xem tất cả</button>
+        </div>
+      </div>
+      <div class="row mt-4 gx-4">
+        <div class="col-6 col-lg-2 ms-0">
+         <img src="./img_deal/img_1.webp" class="img-fluid img_deal wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="1.6s" alt="">
+         <p class="giadeal my-1 wow rotateIn"  data-wow-duration="1s" data-wow-delay="1.3s">270.000 VND</p>
+         <div class="thoigiandeal my-2  wow rotateIn " data-wow-duration="1s" data-wow-delay="1.3s">
+          <p class="dealtrong my-2"></p>
+         </div>
+         <button type="button" class="btn wow rotateIn  text-danger border border-danger muadeal" id="0"  data-wow-duration="1s" data-wow-delay="1.3s">Chọn mua</button>
+        </div>
+        <div class="col-6 col-lg-2">
+          <img src="./img_deal/img_2.webp" class="img-fluid img_deal wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="1.8s" alt="">
+          <p class="giadeal my-1  wow rotateIn " data-wow-duration="1s" data-wow-delay="1.3s">386.000 VND</p>
+          <div class="thoigiandeal my-2  wow rotateIn " data-wow-duration="1s" data-wow-delay="1.3s" >
+           <p class="dealtrong2 my-2"></p>
+          </div>
+          <button type="button" class="btn   wow rotateIn  text-danger border border-danger muadeal" id="1"  data-wow-duration="1s" data-wow-delay="1.3s">Chọn mua</button>
+         </div>
+         <div class="col-6 col-lg-2">
+          <img src="./img_deal/img_3.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="2s" alt="">
+          <p class="giadeal my-1  wow rotateIn " data-wow-duration="1s" data-wow-delay="1.3s">135.000 VND</p>
+          <div class="thoigiandeal my-2  wow rotateIn " data-wow-duration="1s" data-wow-delay="1.3s">
+           <p class="dealtrong3 my-2"></p>
+          </div>
+          <button type="button" class="btn  wow rotateIn   text-danger border border-danger muadeal" id="2" data-wow-duration="1s" data-wow-delay="1.3s">Chọn mua</button>
+         </div>
+         <div class="col-6 col-lg-2">
+          <img src="./img_deal/img_4.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="2.3s" alt="">
+          <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.3s">294.000 VND</p>
+          <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.3s">
+           <p class="dealtrong4 my-2"></p>
+          </div>
+          <button type="button" class="btn wow rotateIn  text-danger border border-danger muadeal" id="3"  data-wow-duration="1s" data-wow-delay="1.3s">Chọn mua</button>
+         </div>
+         <div class="col-6 col-lg-2"> 
+          <img src="./img_deal/img_5.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="2.6s" alt="">
+          <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.3s">88.000 VND</p>
+          <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.3s">
+           <p class="dealtrong5 my-2"></p>
+          </div>
+          <button type="button" class="btn wow rotateIn  text-danger border border-danger muadeal" id="4"  data-wow-duration="1s" data-wow-delay="1.3s">Chọn mua</button>
+         </div>
+         <div class="col-6 col-lg-2">
+          <img src="./img_deal/img_10.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="3s" alt="">
+          <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.3s">350.000 VND</p>
+          <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.3s">
+           <p class="dealtrong6 my-2"></p>
+          </div>
+          <button type="button" class="btn wow rotateIn  text-danger border border-danger muadeal" id="5"  data-wow-duration="1s" data-wow-delay="1.3s">Chọn mua</button>
+         </div>
+     </div>
+    </div>
+
+    <div class="container mt-5" id="banchay">
+      <div class="row mt-4">
+        <div class="col-lg-2 col-1"></div>
+        <div class="col-lg-8 col-10 bogoc bg-main6 wow flipInX" data-wow-duration="1s" data-wow-delay="2s">
+          <p class="my-3 chu_ban">Sản phẩm bán chạy</p>
+        </div>
+        <div class="col-lg-2 col-1"></div>
+      </div>
+      <div class="row gx-4 mt-3">
+        <div class="col-6 col-lg-2 ms-0">
+          <img src="./img_banchay/img_1.webp" class="img-fluid img_deal wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="1.8s" alt="">
+          <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">590.000 VND</p>
+          <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+           <p class="dealtrong7 my-2"></p>
+          </div>
+          <button type="button" class="btn wow rotateIn  text-danger border border-danger muadeal" id="6"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+         </div>
+         <div class="col-6 col-lg-2">
+           <img src="./img_banchay/img_2.webp" class="img-fluid img_deal wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="2.1s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">379.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong8 my-2"></p>
+           </div>
+           <button type="button" class="btn  wow rotateIn text-danger border border-danger muadeal" id="7"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+          <div class="col-6 col-lg-2">
+           <img src="./img_banchay/img_3.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="2.5s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">235.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong9 my-2"></p>
+           </div>
+           <button type="button" class="btn wow rotateIn  text-danger border border-danger muadeal" id="8" data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+          <div class="col-6 col-lg-2">
+           <img src="./img_banchay/img_4.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="2.8s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">120.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong10 my-2"></p>
+           </div>
+           <button type="button" class="btn  wow rotateIn text-danger border border-danger muadeal" id="9"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+          <div class="col-6 col-lg-2"> 
+           <img src="./img_banchay/img_5.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="3s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">65.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong11 my-2"></p>
+           </div>
+           <button type="button" class="btn  wow rotateIn text-danger border border-danger muadeal" id="10"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+          <div class="col-6 col-lg-2">
+           <img src="./img_banchay/img_6.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="3.2s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">310.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong12 my-2"></p>
+           </div>
+           <button type="button" class="btn  wow rotateIn text-danger border border-danger muadeal" id="11"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-lg-4 col-2"></div>
+        <div class="col-lg-4 col-8 my-3 bogoc2 d-flex justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="2.5s">
+          <p class="chu_xem my-2">Xem sản phẩm</p>
+        </div>
+        <div class="col-lg-4 col-2"></div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="rangxay">
+      <div class="row mt-4">
+        <div class="col-lg-2 col-1"></div>
+        <div class="col-lg-8 col-10 bogoc bg-main6 wow flipInX" data-wow-duration="1s" data-wow-delay="1.4s">
+          <p class="my-3 chu_ban">Sản phẩm rang xăy</p>
+        </div>
+        <div class="col-lg-2 col-1"></div>
+      </div>
+      <div class="row gx-4 mt-3">
+        <div class="col-6 col-lg-2 ms-0">
+          <img src="./img_rangxay/img_1.webp" class="img-fluid img_deal wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="1.4s" alt="">
+          <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">550.000 VND</p>
+          <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+           <p class="dealtrong13 my-2"></p>
+          </div>
+          <button type="button" class="btn  wow rotateIn text-danger border border-danger muadeal" id="12"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+         </div>
+         <div class="col-6 col-lg-2">
+           <img src="./img_rangxay/img_2.webp" class="img-fluid img_deal wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="1.4s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">295.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong14 my-2"></p>
+           </div>
+           <button type="button" class="btn wow rotateIn  text-danger border border-danger muadeal" id="13"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+          <div class="col-6 col-lg-2">
+           <img src="./img_rangxay/img_3.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="1.4s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">88.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong15 my-2"></p>
+           </div>
+           <button type="button" class="btn  wow rotateIn text-danger border border-danger muadeal" id="14"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+          <div class="col-6 col-lg-2">
+           <img src="./img_rangxay/img_4.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="1.4s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">365.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong16 my-2"></p>
+           </div>
+           <button type="button" class="btn  wow rotateIn text-danger border border-danger muadeal" id="15"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+          <div class="col-6 col-lg-2"> 
+           <img src="./img_rangxay/img_5.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="1.4s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">65.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong17 my-2"></p>
+           </div>
+           <button type="button" class="btn wow rotateIn  text-danger border border-danger muadeal" id="16"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+          <div class="col-6 col-lg-2">
+           <img src="./img_rangxay/img_6.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="1.4s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">67.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong18 my-2"></p>
+           </div>
+           <button type="button" class="btn  wow rotateIn text-danger border border-danger muadeal" id="17"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-lg-4 col-2"></div>
+        <div class="col-lg-4 col-8 my-3 bogoc2 d-flex justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="2.5s">
+          <p class="chu_xem my-2 " >Xem sản phẩm</p>
+        </div>
+        <div class="col-lg-4 col-2"></div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="uonglien">
+      <div class="row mt-3">
+        <div class="col-lg-2 col-1"></div>
+        <div class="col-lg-8 col-10 bogoc bg-main6 wow flipInX" data-wow-duration="1s" data-wow-delay="2s">
+          <p class="my-3 chu_ban">Cà phê uống liền</p>
+        </div>
+        <div class="col-lg-2 col-1"></div>
+      </div>
+      <div class="row gx-4 mt-3">
+        <div class="col-6 col-lg-2 ms-0">
+          <img src="./img_uonglien/img_1.webp" class="img-fluid img_deal wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="1.6s" alt="">
+          <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">32.000 VND</p>
+          <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+           <p class="dealtrong19 my-2"></p>
+          </div>
+          <button type="button" class="btn  wow rotateIn text-danger border border-danger muadeal" id="18"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+         </div>
+         <div class="col-6 col-lg-2">
+           <img src="./img_uonglien/img_2.webp" class="img-fluid img_deal wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="1.9s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">379.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong20 my-2"></p>
+           </div>
+           <button type="button" class="btn wow rotateIn  text-danger border border-danger muadeal" id="19"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+          <div class="col-6 col-lg-2">
+           <img src="./img_uonglien/img_3.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="2.2s" alt="">
+           <p class="giadeal my-1 wow rotateIn " data-wow-duration="1s" data-wow-delay="1.4s">350.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong21 my-2"></p>
+           </div>
+           <button type="button" class="btn wow rotateIn  text-danger border border-danger muadeal" id="20"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+          <div class="col-6 col-lg-2">
+           <img src="./img_uonglien/img_4.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="2.5s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">280.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong22 my-2"></p>
+           </div>
+           <button type="button" class="btn  wow rotateIn text-danger border border-danger muadeal" id="21"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+          <div class="col-6 col-lg-2"> 
+           <img src="./img_uonglien/img_5.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="2.8s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">82.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong23 my-2"></p>
+           </div>
+           <button type="button" class="btn  wow rotateIn text-danger border border-danger muadeal" id="22"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+          <div class="col-6 col-lg-2">
+           <img src="./img_uonglien/img_6.webp" class="img-fluid mt-3 mt-lg-0 img_deal wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="3s" alt="">
+           <p class="giadeal my-1 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">75.000 VND</p>
+           <div class="thoigiandeal my-2 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+            <p class="dealtrong24 my-2"></p>
+           </div>
+           <button type="button" class="btn  wow rotateIn text-danger border border-danger muadeal" id="23"  data-wow-duration="1s" data-wow-delay="1.4s">Chọn mua</button>
+          </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-lg-4 col-2"></div>
+        <div class="col-lg-4 col-8 my-3 bogoc2 d-flex justify-content-center wow flipInY"   data-wow-duration="1s" data-wow-delay="2.5s">
+          <p class="chu_xem my-2 ">Xem sản phẩm</p>
+        </div>
+        <div class="col-lg-4 col-2"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer my-0">
+      <div class="row">
+        <div class="col-lg-11">
+           <div class="container-fluid ">
+            <div class="row ">
+              <div class="col-lg-3 d-flex align-items-center">
+               <div class="container-fluid">
+                <div class="row">
+                 <div class="col-2"></div>
+                 <div class="col-lg-6 mt-2 mt-lg-0 tonghop">
+                   <img src="./imgs/img_face.jpg" class="img-fluid face wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2s" width="25px" alt="">
+                   <img src="./imgs/img_you.jpg" class="img-fluid you wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="2.5s" width="25px" alt="">
+                   <img src="./imgs/img_ins.jpg" class="img-fluid ins wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="3s" width="25px" alt="">
+                 </div>
+                 <div class="col-2"></div>
+                </div>
+               </div>
+              </div>
+              <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2s">2018 Highlands Coffee</div>
+              <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.5s"><i class="ti-location-arrow me-2"></i> Đăng ký để nhận bản tin</div>
+              <div class="col-lg-3 chu_footer wow bounceInRight" data-wow-duration="1s" data-wow-delay="3s"><i class="ti-email me-2"></i> ssdssdq@highlandscoffee.com.vn</div>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="main7">
+      <div class="container-fluid" style="height: 100%;">
+        <div class="row anhien my-0" style="height: 100%;">
+          <div class="col-0 col-xl-8 col-lg-6 col-md-4 nonenhe"></div>
+          <div class="col-12 col-xl-4 col-lg-6 col-md-8 bg-white thanhtoan">
+              <div class="container mt-3">
+               <div class="d-flex justify-content-between align-items-center">
+                <p class="giohang">Giỏ hàng</p>
+                <i class="ti-close nut_close"></i>
+               </div>
+              <div class="container-fluid them">
+              </div>
+               <div class="d-flex justify-content-between align-items-center mt-5  border-top border-muted">
+                <p class="giohang mt-3">Tổng tiền:</p>
+                <div class="d-flex align-items-center mt-3">
+                  <span class="tongtien"></span>
+                  <span class="tongtien1">.000đ</span>
+                </div>
+               </div>
+               <div class="">
+                <button type="button" class="btn btn-danger mt-3 toan" >Thanh toán</button>
+               </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="luotlen">
+      <i class="ti-angle-up lende"></i>
+    </div>
+      </div>
+
+
+      <div class="main8">
+        <header>
+          <div class="container-fluid py-0 my-0">
+            <div class="row">
+              <div class="col-xl-8">
+                <div class="container">
+                  <div class="d-flex justify-content-center align-items-center my-5">
+                    <img src="./imgs/images/img_logofinal.png" class="img-fluid img_logofinal wow bounceInDown" data-wow-duration="1s" data-wow-delay="2s" width="120" height="120" alt="">
+                  </div>
+                  <div class="row mx-xl-5 gx-xl-5">
+                    <div class="col-xl-6 col-12">
+                      <p class="chu_vanchuyen wow bounceInLeft" data-wow-duration="1s" data-wow-delay="2.5s">Thông tin:</p>
+                      <form action="/action_page.php" class="was-validated">
+                        <div class="mb-3 mt-1 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="2.7s">
+                          <label for="uname1" class="form-label"></label>
+                          <input type="text" class="form-control border border-3 uname1" id="uname1" placeholder="Email(tùy trọn)" name="uname" required>
+                          <div class="valid-feedback">Hợp lệ.</div>
+                          <div class="invalid-feedback">Vui lòng nhập email.</div>
+                        </div>
+                        <div class="mb-3 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="2.9s">
+                          <label for="pwd33" class="form-label"></label>
+                          <input type="text" class="form-control border border-3 pwd33" id="pwd33" placeholder="Họ và tên" name="pswd" required>
+                          <div class="valid-feedback">Hợp lệ.</div>
+                          <div class="invalid-feedback">Vui lòng nhập tên đầy đủ.</div>
+                        </div>
+                        <div class="mb-3 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="3.1s">
+                          <label for="pwd2" class="form-label"></label>
+                          <input type="text" class="form-control border border-3 pwd2" id="pwd2" placeholder="Số điện thoại(tùy trọn)" name="pswd" required>
+                          <div class="valid-feedback">Hợp lệ.</div>
+                          <div class="invalid-feedback">Vui lòng nhập số điện thoại.</div>
+                        </div>
+                        <div class="mb-3 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="3.3s">
+                          <label for="pwd3" class="form-label"></label>
+                          <input type="text" class="form-control border border-3 pwd3" id="pwd3" placeholder="Địa chỉ(tùy trọn)" name="pswd" required>
+                          <div class="valid-feedback">Hợp lệ.</div>
+                          <div class="invalid-feedback">Vui lòng nhập địa chỉ.</div>
+                        </div>
+                        <div class="form-floating mb-3 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="3.5s">
+                          <select class="form-select border border-3" id="sel1" name="sellist" required>
+                            <option></option>
+                            <option>Hà Nội</option>
+                            <option>Hải Phòng</option>
+                            <option>Hải Dương</option>
+                            <option>Lạng Sơn</option>
+                            <option>TP.Hồ Chí Minh</option>
+                            <option>Nam Định</option>
+                            <option>Đà Nẵng</option>
+                            <option>Hưng Yên</option>
+                          </select>
+                          <label for="sel1" class="form-label">Tỉnh thành:</label>
+                          <div class="valid-feedback">Hợp lệ.</div>
+                          <div class="invalid-feedback">Vui lòng chọn tỉnh thành.</div>
+                        </div>
+                        <div class="form-floating mb-3 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="3.7s">
+                          <select class="form-select border border-3" id="sel2" name="sellist" required>
+                            <option></option>
+                            <option>Hà Đông</option>
+                            <option>Thanh Trì</option>
+                            <option>Thanh Xuân</option>
+                            <option>Hồ Tây</option>
+                            <option>Gia Lâm</option>
+                            <option>Đống Đa</option>
+                            <option>Sóc Sơn</option>
+                            <option>Ba Vì</option>
+                          </select>
+                          <label for="sel2" class="form-label">Quận huyện:</label>
+                          <div class="valid-feedback">Hợp lệ.</div>
+                          <div class="invalid-feedback">Vui lòng chọn quận huyện.</div>
+                        </div>
+                        <div class="form-floating mb-3  wow bounceInLeft" data-wow-duration="1s" data-wow-delay="3.9s">
+                          <select class="form-select border border-3" id="sel3" name="sellist" required>
+                            <option></option>
+                            <option>Khương Hạ</option>
+                            <option>Thượng Đình</option>
+                            <option>Thanh Xuân Nam</option>
+                            <option>Thanh Xuân Chung</option>
+                            <option>Bắc Từ Liêm</option>
+                            <option>Nhân Chính</option>
+                            <option>Quan Nhân</option>
+                            <option>Mộ Lao</option>
+                          </select>
+                          <label for="sel3" class="form-label">Phường xã:</label>
+                          <div class="valid-feedback">Hợp lệ.</div>
+                          <div class="invalid-feedback">Vui lòng chọn phường xã.</div>
+                        </div>
+                        <div class="form-floating mb-3 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="4s">
+                          <textarea class="form-control border border-3" id="comment" name="text" placeholder="Comment goes here" ></textarea>
+                          <label for="comment">Ghi chú:</label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-xl-6">
+                      <p class="chu_vanchuyen mb-1 wow bounceInUp" data-wow-duration="1s" data-wow-delay="2.5s">Vận chuyển:</p>
+                      <form action="/action_page.php" class="form_main8">
+                        <div data-wow-duration="1s" data-wow-delay="2.9s" class="wow bounceInUp form-check mb-3 mt-3 border border-3  rounded d-flex justify-content-around align-items-center">
+                          <input class="form-check-input my-2 border-2 rounded-circle border border-dark checkinput" type="checkbox" id="myCheck" name="remember" >
+                          <label class="form-check-label my-3" for="myCheck">Giao hàng tận nơi.</label>
+                          <p class="chu_gia8">25.000 đ</p>
+                        </div>
+                        <div data-wow-duration="1s" data-wow-delay="3.7s" class="wow bounceInUp form-check mb-3 mt-4 border border-3 rounded d-flex justify-content-around align-items-center">
+                          <input class="form-check-input my-2 border-2 rounded-circle border border-dark" type="checkbox" id="myCheck1"  name="remember1" >
+                          <label class="form-check-label my-3" for="myCheck">Thanh toán khi giao hàng.</label>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 border border-2 my-0 bg-col4 border-muted wow bounceInRight" data-wow-duration="1s" data-wow-delay="2s">
+                  <div class="container">
+                    <div class="d-flex align-items-center mt-3">
+                      <p class="donhang">Đơn hàng</p>
+                      <span class="ms-1 soluong"></span>
+                    </div>
+                    <div class="themvao mt-3"></div>
+                    <div class=" mt-4 container-fluid">
+                      <input type="text" placeholder="  Nhập mã giảm giá" class="form-control border border-1 rounded border-muted" style="height: 35px;">
+                     <div class="d-flex justify-content-between align-items-center">
+                      <div class="mt-3 d-flex justify-content-between align-items-center">
+                        <i class="ti-angle-left"></i>
+                        <p class="quaylai">Quay lại</p>
+                      </div>
+                      <button type="button" class="btn btn-danger apdung mt-3">Áp dụng</button>
+                     </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-4 border-top border-muted">
+                       <p class="tamtinh mt-4">Tạm tính:</p>
+                       <div class="d-flex justify-content-end align-items-center mt-4">
+                        <span class="tamtinh1"></span>
+                        <span class="tamtinh2">.000đ</span>
+                       </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-4 border-bottom border-muted">
+                      <p class="tamtinh my-4">Phí vận chuyển:</p>
+                      <div class="d-flex justify-content-end align-items-center my-4">
+                       <span class="tamtinh3"></span>
+                       <span class="tamtinh2">.000đ</span>
+                      </div>
+                   </div>
+                   <div class="d-flex justify-content-between align-items-center mt-5 ">
+                    <p class="tamtinh ">Tổng cộng:</p>
+                    <div class="d-flex justify-content-end align-items-center ">
+                     <span class="tamtinh4"></span>
+                     <span class="tamtinh2">.000đ</span>
+                    </div>
+                 </div>
+                 <div>
+                <button type="button" class="btn btn-danger mt-4 dathang" >ĐẶT HÀNG</button>
+                 </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="alert alert-muted alert-dismissible fade show main9">
+          <div class="alert alert-danger d-flex align-items-center fade show" role="alert">
+            <button type="button" class="btn-close dongnheban"></button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+          <div>
+          Mời bạn điền đầy đủ thông tin
+          </div>
+          </div>
+        </div>
+
+       
+      </div>
+
+      </div>
+  
+      <div class="main10">
+          <div class="container">
+            <div class="d-flex justify-content-center align-items-center my-5">
+              <img src="./imgs/images/img_logofinal.png" class="img-fluid img_logofinal10" width="120" height="120" alt="">
+            </div>
+            <div class="row">
+              <div class="col-xl-6 d-flex col-12 justify-content-center align-items-center">
+                <div class="container d-xl-flex align-items-center">
+                  <div class="row">
+                   <div class="col-xl-4 col-12 d-flex justify-content-center align-items-center">
+                    <div class="tichxanh d-flex justify-content-center align-items-center">
+                      <i class="ti-check text-success checkne"></i>
+                    </div>
+                   </div>
+                    <div class="col-xl-8 col-12 d-flex justify-content-center align-items-center">
+                      <div class="container-fluid d-flex justify-content-center align-items-center">
+                        <div class="">
+                          <p class="camon my-3 d-xl-block d-flex justify-content-center align-items-center">Cảm ơn bạn đã đặt hàng</p>
+                        <p class="camon d-xl-block d-flex justify-content-center align-items-center">Nhận thêm coupon ưu đãi áp dụng tại quán</p>
+                        <p class="camon d-flex d-xl-block justify-content-center align-items-center">Nhập mã "HIGHLANDS"</p>
+                        <p class="camon d-flex d-xl-block justify-content-center align-items-center">Tại link: <a href=" https://partners.highlandscoffee.com.vn/">highlandscoffee.com</a></p>
+                        <div class="my-3">
+                          <p class="vuilong d-flex d-xl-block justify-content-center align-items-center">Một email xác nhận đã được gửi tới :<span class="emails"></span></p>
+                          <p class="mt-1 vuilong d-xl-block d-flex justify-content-center align-items-center">Xin vui lòng kiểm tra email của bạn</p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="container-fluid">
+                  <div class="row border border-3 border-muted">
+                    <div class="col-xl-6 mt-4">
+                      <p class="tinvui mb-2">Thông tin mua hàng</p>
+                      <p class="ten1"></p>
+                      <p class="mail mt-2"></p>
+                      <p class="sdt mt-2"></p>
+                      <p class="tiente mt-2">Tổng cộng : <span class="themtien"></span>
+                    </div>
+                    <div class="col-xl-6 mt-4 ">
+                      <p class="tinvui mb-2">Địa chỉ nhận hàng</p>
+                      <p class="ten2 mt-2"></p>
+                      <p class="diachituytron mt-2"></p>
+                      <p class="diachitong mt-2">
+                        <span class="phuongxa"></span>,<span class="quanhuyen"></span>,<span class="tinhthanh"></span>
+                      </p>
+                      <p class="sdt2 mt-2"></p>
+                    </div>
+                    <div class="col-xl-6 my-4">
+                      <p class="tinvui">Phương thức thanh toán</p>
+                      <p class="mt-2 toankhi"></p>
+                    </div>
+                    <div class="col-xl-6 my-4">
+                      <p class="tinvui">Phương thức vận chuyển</p>
+                      <p class="mt-2 tannoi"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 d-flex justify-content-center align-items-center">
+              <button type="button" class="btn btn-danger tieptuc">Tiếp tục mua hàng</button>
+            </div>
+          </div>
+      </div>
+
+   <div class="loading">
+    <span class="tiktok"></span>
+   </div>
+    
+
+
+    <script src="./assets/css/main.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      $(function(){
+        $('.icon-menu').click(function(){
+          const x=document.querySelector('.menu-drop')
+          x.classList.add('active')
+          $('.menu-list').slideDown(1200);
+      });
+      $('.nut-x').click(function(){
+        $('.menu-list').slideUp(1200);
+        setTimeout(function(){
+          const x=document.querySelector('.menu-drop')
+          x.classList.remove('active')
+        },1200)
+      })
+      $('.icon-menu').click(function(){
+          const x=document.querySelector('.menu-drop1')
+          x.classList.add('active')
+          $('.menu-list1').slideDown(1200);
+      });
+      $('.nut-x').click(function(){
+        $('.menu-list1').slideUp(1200);
+        setTimeout(function(){
+          const x=document.querySelector('.menu-drop1')
+          x.classList.remove('active')
+        },1200)
+      })
+      $('.icon-menu').click(function(){
+          const x=document.querySelector('.menu-drop2')
+          x.classList.add('active')
+          $('.menu-list2').slideDown(1200);
+      });
+      $('.nut-x').click(function(){
+        $('.menu-list2').slideUp(1200);
+        setTimeout(function(){
+          const x=document.querySelector('.menu-drop2')
+          x.classList.remove('active')
+        },1200)
+      })
+      $('.icon-menu').click(function(){
+          const x=document.querySelector('.menu-drop3')
+          x.classList.add('active')
+          $('.menu-list3').slideDown(1200);
+      });
+      $('.nut-x').click(function(){
+        $('.menu-list3').slideUp(1200);
+        setTimeout(function(){
+          const x=document.querySelector('.menu-drop3')
+          x.classList.remove('active')
+        },1200)
+      })
+      $('.icon-menu').click(function(){
+          const x=document.querySelector('.menu-drop4')
+          x.classList.add('active')
+          $('.menu-list4').slideDown(1200);
+      });
+      $('.nut-x').click(function(){
+        $('.menu-list4').slideUp(1200);
+        setTimeout(function(){
+          const x=document.querySelector('.menu-drop4')
+          x.classList.remove('active')
+        },1200)
+      })
+      $('.icon-menu').click(function(){
+          const x=document.querySelector('.menu-drop5')
+          x.classList.add('active')
+          $('.menu-list5').slideDown(1200);
+      });
+      $('.nut-x').click(function(){
+        $('.menu-list5').slideUp(1200);
+        setTimeout(function(){
+          const x=document.querySelector('.menu-drop5')
+          x.classList.remove('active')
+        },1200)
+      })
+      $('img[src="./imgs/images/img_8.png"]').click(function(){
+        const chat=document.querySelector('.phanchat')
+        chat.classList.add('mora')
+        this.classList.add('dongdi')
+        document.querySelector('.comment1').classList.add('mora')
+      })
+     $('.comment1').click(function(){
+      const chat=document.querySelector('.phanchat')
+        chat.classList.remove('mora')
+       document.querySelector('.comment').classList.remove('dongdi')
+       document.querySelector('.comment1').classList.remove('mora')
+     })
+      $('.thucdon').hover(function(){
+        $('.navbar_menu').fadeIn()
+      })
+      $('.size-img').hover(function(){
+        $('.navbar_menu').fadeOut()
+      })
+      $('.img-hover').hover(function(){
+        $('.navbar_menu').fadeOut()
+      })
+      $('.img-hover').hover(function(){
+        $('.navbar_menu2').fadeOut()
+      })
+      $('.img-6').hover(function(){
+        $('.navbar_menu').fadeOut()
+      })
+      $('.slide-show').hover(function(){
+        $('.navbar_menu').fadeOut()
+      })
+      $('li:not(.thucdonli)').hover(function(){
+        $('.navbar_menu').fadeOut()
+      })
+      $('.form').hover(function(){
+        $('.navbar_menu').fadeOut()
+      })
+      $('body').hover(function(){
+        $('.navbar_menu').fadeOut()
+      })
+
+
+      $('.chungtoi').hover(function(){
+        $('.navbar_menu2').fadeIn()
+      })
+      $('.size-img').hover(function(){
+        $('.navbar_menu2').fadeOut()
+      })
+      $('.img-6').hover(function(){
+        $('.navbar_menu2').fadeOut()
+      })
+      $('.slide-show').hover(function(){
+        $('.navbar_menu2').fadeOut()
+      })
+      $('li:not(.chungtoi)').hover(function(){
+        $('.navbar_menu2').fadeOut()
+      })
+      $('.form').hover(function(){
+        $('.navbar_menu2').fadeOut()
+      })
+      $('body').hover(function(){
+        $('.navbar_menu2').fadeOut()
+      })
+      $('.img_cham').hover(function(){
+        $('.navbar_menu2').fadeOut()
+      })
+      $('.img_cham').hover(function(){
+        $('.navbar_menu').fadeOut()
+      })
+      $(window).scroll(function(){
+        if($(window).scrollTop()){
+          $('.lanchuot').fadeIn()
+        }
+        else{
+          $('.lanchuot').fadeOut()
+        }
+      })
+      $('.lanchuot').click(function(){
+        $('body,html').animate({
+          scrollTop:0
+        },1000)
+      })
+      $(window).scroll(function(){
+        if($(window).scrollTop()){
+          $('.luotlen').fadeIn()
+        }
+        else{
+          $('.luotlen').fadeOut()
+        }
+      })
+      $('.luotlen').click(function(){
+        $('body,html').animate({
+          scrollTop:0
+        },1000)
+      })
+      $('.toan').click(function(){
+        $('.main6').fadeOut()
+        $('.loading').fadeIn()
+        setTimeout(function(){
+          $('.loading').fadeOut()
+          $('.main8').fadeIn()
+        },3000)
+      })
+      $('.quaylai').click(function(){
+        $('.main8').fadeOut()
+        $('.loading').fadeIn()
+        setTimeout(function(){
+          $('.loading').fadeOut()
+          $('.main6').fadeIn()
+        },3000)
+      })
+      $('.img_logofinal').click(function(){
+        $('.main8').fadeOut()
+        $('.loading').fadeIn()
+        setTimeout(function(){
+          $('.loading').fadeOut()
+          $('.main').fadeIn()
+        },3000)
+      })
+      $('.tintucnew').click(function(){
+        $('.main').fadeOut()
+        $('.main2').fadeOut()
+        $('.main3').fadeOut()
+        $('.main4').fadeOut()
+        $('.main5').fadeOut()
+        $('.main6').fadeOut()
+        $('.main10').fadeOut()
+        $('.loading').fadeIn()
+       document.querySelector('.menu-drop').classList.remove('active')
+       document.querySelector('.menu-drop1').classList.remove('active')
+       document.querySelector('.menu-drop2').classList.remove('active')
+       document.querySelector('.menu-drop3').classList.remove('active')
+       document.querySelector('.menu-drop4').classList.remove('active')
+       document.querySelector('.menu-drop5').classList.remove('active')
+        setTimeout(function(){
+          $('.loading').fadeOut()
+          $('.main1').fadeIn()
+        },3000)
+      })
+      $('.vechungtoinew').click(function(){
+        $('.main').fadeOut()
+        $('.main2').fadeOut()
+        $('.main3').fadeOut()
+        $('.main1').fadeOut()
+        $('.main6').fadeOut()
+        $('.main10').fadeOut()
+        $('.main5').fadeOut()
+        $('.loading').fadeIn()
+       document.querySelector('.menu-drop').classList.remove('active')
+       document.querySelector('.menu-drop1').classList.remove('active')
+       document.querySelector('.menu-drop2').classList.remove('active')
+       document.querySelector('.menu-drop3').classList.remove('active')
+       document.querySelector('.menu-drop5').classList.remove('active')
+       document.querySelector('.menu-drop4').classList.remove('active')
+        setTimeout(function(){
+          $('.loading').fadeOut()
+          $('.main4').fadeIn()
+        },3000)
+      })
+      $('.congdongnew').click(function(){
+        $('.main').fadeOut()
+        $('.main1').fadeOut()
+        $('.main3').fadeOut()
+        $('.main4').fadeOut()
+        $('.main6').fadeOut()
+        $('.main10').fadeOut()
+        $('.main5').fadeOut()
+        $('.loading').fadeIn()
+        document.querySelector('.menu-drop').classList.remove('active')
+       document.querySelector('.menu-drop1').classList.remove('active')
+       document.querySelector('.menu-drop2').classList.remove('active')
+       document.querySelector('.menu-drop5').classList.remove('active')
+       document.querySelector('.menu-drop4').classList.remove('active')
+       document.querySelector('.menu-drop3').classList.remove('active')
+        setTimeout(function(){
+          $('.loading').fadeOut()
+          $('.main2').fadeIn()
+        },3000)
+      })
+      $('.thucdonli').click(function(){
+        $('.main').fadeOut()
+        $('.main1').fadeOut()
+        $('.main2').fadeOut()
+        $('.main4').fadeOut()
+        $('.main6').fadeOut()
+        $('.main10').fadeOut()
+        $('.main5').fadeOut()
+        $('.loading').fadeIn()
+        document.querySelector('.menu-drop').classList.remove('active')
+       document.querySelector('.menu-drop1').classList.remove('active')
+       document.querySelector('.menu-drop2').classList.remove('active')
+       document.querySelector('.menu-drop5').classList.remove('active')
+       document.querySelector('.menu-drop4').classList.remove('active')
+       document.querySelector('.menu-drop3').classList.remove('active')
+        setTimeout(function(){
+          $('.loading').fadeOut()
+          $('.main3').fadeIn()
+        },3000)
+      })
+
+      $('.quancaphe').click(function(){
+        $('.main').fadeOut()
+        $('.main1').fadeOut()
+        $('.main2').fadeOut()
+        $('.main4').fadeOut()
+        $('.main6').fadeOut()
+        $('.main10').fadeOut()
+        $('.main3').fadeOut()
+        $('.loading').fadeIn()
+        document.querySelector('.menu-drop').classList.remove('active')
+       document.querySelector('.menu-drop1').classList.remove('active')
+       document.querySelector('.menu-drop2').classList.remove('active')
+       document.querySelector('.menu-drop5').classList.remove('active')
+       document.querySelector('.menu-drop4').classList.remove('active')
+       document.querySelector('.menu-drop3').classList.remove('active')
+        setTimeout(function(){
+          $('.loading').fadeOut()
+          $('.main5').fadeIn()
+        },3000)
+      })
+
+      $('.muangay').click(function(){
+        $('.main').fadeOut()
+        $('.main1').fadeOut()
+        $('.main2').fadeOut()
+        $('.main4').fadeOut()
+        $('.main5').fadeOut()
+        $('.main10').fadeOut()
+        $('.main3').fadeOut()
+        $('.loading').fadeIn()
+        document.querySelector('.menu-drop').classList.remove('active')
+       document.querySelector('.menu-drop1').classList.remove('active')
+       document.querySelector('.menu-drop2').classList.remove('active')
+       document.querySelector('.menu-drop5').classList.remove('active')
+       document.querySelector('.menu-drop4').classList.remove('active')
+       document.querySelector('.menu-drop3').classList.remove('active')
+        setTimeout(function(){
+          $('.loading').fadeOut()
+          $('.main6').fadeIn()
+        },3000)
+      })
+
+      $('.img_logo').click(function(){
+        $('.main').fadeOut()
+        $('.main1').fadeOut()
+        $('.main2').fadeOut()
+        $('.main3').fadeOut()
+        $('.main4').fadeOut()
+        $('.main6').fadeOut()
+        $('.main10').fadeOut()
+        $('.main5').fadeOut()
+        $('.loading').fadeIn()
+        document.querySelector('.menu-drop').classList.remove('active')
+       document.querySelector('.menu-drop1').classList.remove('active')
+       document.querySelector('.menu-drop2').classList.remove('active')
+       document.querySelector('.menu-drop5').classList.remove('active')
+       document.querySelector('.menu-drop4').classList.remove('active')
+       document.querySelector('.menu-drop3').classList.remove('active')
+        setTimeout(function(){
+          $('.loading').fadeOut()
+          $('.main').fadeIn()
+        },3000)
+      })
+      $('.img_logofinal10').click(function(){
+        $('.main10').fadeOut()
+        $('.loading').fadeIn()
+        setTimeout(function(){
+          $('.loading').fadeOut()
+          $('.main').fadeIn()
+        },3000)
+      })
+      $('.tieptuc').click(function(){
+        $('.main10').fadeOut()
+        document.querySelector('.main10').classList.remove('momain10')
+        $('.loading').fadeIn()
+        setTimeout(function(){
+          $('.loading').fadeOut()
+          $('.main6').fadeIn()
+        },3000)
+      })
+let input1=document.getElementById('uname1')
+let input2=document.getElementById('pwd33')
+let input3=document.getElementById('pwd2')
+let input4=document.getElementById('pwd3')
+let input5=document.getElementById('sel1')
+let input6=document.getElementById('sel2')
+let input7=document.getElementById('sel3')
+let input8=document.querySelector('.uname1')
+let input9=document.querySelector('.pwd33')
+let input10=document.querySelector('.pwd2')
+     $('.dathang').click(function(){
+      if(input1.value==='' || input2.value==='' || input3.value==='' || input4.value==='' || input5.options[input5.selectedIndex].text==='' || input6.options[input6.selectedIndex].text==='' || input7.options[input7.selectedIndex].text===''){
+        $('.main9').fadeIn(500)
+       }
+       else{
+        $('.main8').fadeOut()
+        $('.loading').fadeIn()
+        setTimeout(function(){
+          $('.loading').fadeOut()
+          $('.main10').fadeIn()
+        },2000)
+        console.log(input2.value)
+        const emails=document.querySelector('.emails')
+        emails.textContent=`${input1.value}`
+        document.querySelector('.ten1').textContent=`${input2.value}`
+        document.querySelector('.ten2').textContent=`${input9.value}`
+        document.querySelector('.mail').textContent=`${input8.value}`
+        document.querySelector('.sdt').textContent=`${input3.value}`
+        document.querySelector('.sdt2').textContent=`${input10.value}`
+        document.querySelector('.diachituytron').textContent=`${input4.value}`
+        document.querySelector('.phuongxa').textContent=`${input7.options[input7.selectedIndex].text}`
+        document.querySelector('.quanhuyen').textContent=`${input6.options[input6.selectedIndex].text}`
+        document.querySelector('.tinhthanh').textContent=`${input5.options[input5.selectedIndex].text}`
+       }
+     })
+     $('.dongnheban').click(function(){
+      $('.main9').fadeOut(500)
+     })
+    });
+    </script>
+</body>
+</html>
