@@ -1284,6 +1284,18 @@ h5{
     color: #b12830;
     font-weight: 600;
 }
+.quanti{
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50%;
+    background-color: #b12830;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    opacity: 0.8;
+}
 .dong{
     color: #b12830;
     font-weight: 600;

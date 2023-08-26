@@ -94,98 +94,146 @@ let htmlss=document.querySelector('.themvao')
 const app=(function (){
     let thongtins=[
         {
+            id:0,
+            quantity:1,
             img:'./img_deal/img_1.webp',
             giatien:270 
         },
         {
+            id:1,
+            quantity:1,
             img:'./img_deal/img_2.webp',
             giatien:386
         },
         {
+            id:2,
+            quantity:1,
             img:'./img_deal/img_3.webp',
             giatien:135
         },
         {
+            id:3,
+            quantity:1,
             img:'./img_deal/img_4.webp',
             giatien:294
         },
         {
+            id:4,
+            quantity:1,
             img:'./img_deal/img_5.webp',
             giatien:88
         },
         {
+            id:5,
+            quantity:1,
             img:'./img_deal/img_10.webp',
             giatien:350
         },
         {
+            id:6,
+            quantity:1,
             img:'./img_banchay/img_1.webp',
             giatien:590
         },
         {
+            id:7,
+            quantity:1,
             img:'./img_banchay/img_2.webp',
             giatien:379
         },
         {
+            id:8,
+            quantity:1,
             img:'./img_banchay/img_3.webp',
             giatien:235
         },
         {
+            id:9,
+            quantity:1,
             img:'./img_banchay/img_4.webp',
             giatien:120
         },
         {
+            id:10,
+            quantity:1,
             img:'./img_banchay/img_5.webp',
             giatien:65
         },
         {
+            id:11,
+            quantity:1,
             img:'./img_banchay/img_6.webp',
             giatien:310
         },
         {
+            id:12,
+            quantity:1,
             img:'./img_rangxay/img_1.webp',
             giatien:550
         },
         {
+            id:13,
+            quantity:1,
             img:'./img_rangxay/img_2.webp',
             giatien:295
         },
         {
+            id:14,
+            quantity:1,
             img:'./img_rangxay/img_3.webp',
             giatien:88
         },
         {
+            id:15,
+            quantity:1,
             img:'./img_rangxay/img_4.webp',
             giatien:365
         },
         {
+            id:16,
+            quantity:1,
             img:'./img_rangxay/img_5.webp',
             giatien:65
         },
         {
+            id:17,
+            quantity:1,
             img:'./img_rangxay/img_6.webp',
             giatien:67
         },
         {
+            id:18,
+            quantity:1,
             img:'./img_uonglien/img_1.webp',
             giatien:32
         },
         {
+            id:19,
+            quantity:1,
             img:'./img_uonglien/img_2.webp',
             giatien:379
         },
         {
+            id:20,
+            quantity:1,
             img:'./img_uonglien/img_3.webp',
             giatien:350
         },
         {
+            id:21,
+            quantity:1,
             img:'./img_uonglien/img_4.webp',
             giatien:280
         },
         {
+            id:22,
+            quantity:1,
             img:'./img_uonglien/img_5.webp',
             giatien:82
         },
         {
+            id:23,
+            quantity:1,
             img:'./img_uonglien/img_6.webp',
             giatien:75
         }
@@ -201,29 +249,42 @@ const app=(function (){
                     document.querySelector('.thanhtoan').style.transform='translateX(0%)'
                     },1000)
                     let soid=parseInt(mua.id)
-                    for(let currentIndex=0;currentIndex<24;currentIndex++){
-                        if(currentIndex===soid){
-                            lists.push(thongtins[currentIndex])
-                            const html=lists.map((list,index)=>
-                            `<div  class="mt-3 d-flex justify-content-between align-items-center">
-                        <img src="${list.img}" class="img-fluid anhthem" width="60" height="60" alt="">
-                        <div class="" style="width: 140px;">
-                        <div class="d-flex align-items-center justify-content-end">
-                          <p class="giatiensanpham">${list.giatien}</p>
-                          <p class="dong">.000đ</p>
-                      </div>
-                        <div class="xoabor mt-3" data-index="${index}">
-                         <p class="xoanhe">Bỏ sản phẩm</p>
-                       </div>
-                       </div>
-                     </div>`
-                            )
-                            htmls.innerHTML=html.join('')
-                            htmlss.innerHTML=html.join('')
+                     if(lists.length===0){
+                        lists.push(thongtins[soid])
+                     }
+                     else{
+                       if(lists.includes(thongtins[soid])){
+                        for(let i=0;i<lists.length;++i){
+                            if(soid===lists[i].id){
+                                lists[i].quantity++
+                            }
                         }
-                    }
+                       }
+                       else{
+                        lists.push(thongtins[soid])
+                       }
+                     }
+                     const html=lists.map((list,index)=>
+                     `<div  class="mt-3 d-flex justify-content-between align-items-center">
+                     <div class="d-flex justify-content-between align-items-center">
+                     <img src="${list.img}" class="img-fluid anhthem" width="60" height="60" alt="">
+                     <p class="quanti ms-2">${list.quantity}</p>
+                   </div>
+                 <div class="" style="width: 140px;">
+                 <div class="d-flex align-items-center justify-content-end">
+                   <p class="giatiensanpham">${list.giatien*list.quantity}</p>
+                   <p class="dong">.000đ</p>
+               </div>
+                 <div class="xoabor mt-3" data-index="${index}">
+                  <p class="xoanhe">Bỏ sản phẩm</p>
+                </div>
+                </div>
+              </div>`
+                     )
+                     htmls.innerHTML=html.join('')
+                     htmlss.innerHTML=html.join('')
                      res = lists.reduce((total,currentValue) => {
-                        return total + currentValue.giatien;
+                        return total + currentValue.giatien*currentValue.quantity;
                       },0)
                       document.querySelector('.tongtien').textContent=`${res}`
                       document.querySelector('.tamtinh1').textContent=`${res}`
@@ -248,7 +309,10 @@ const app=(function (){
                  }
                  const soluong=document.querySelector('.soluong')
                   let sos=lists.length
-                  soluong.textContent=`(${sos} sản phẩm)`
+                  let so2 = lists.reduce((total,currentValue) => {
+                    return total +currentValue.quantity;
+                  },0)
+                  soluong.textContent=`(${so2} sản phẩm)`
                 }
             }
             htmls.onclick=function(e){
@@ -256,13 +320,14 @@ const app=(function (){
                 console.log(btn)
               if(btn){
                 const indexs=btn.dataset.index
+                lists[indexs].quantity=1
                 lists.splice(indexs,1)
                 const html=lists.map((list,index)=>
                 `<div  class="mt-3 d-flex justify-content-between align-items-center">
             <img src="${list.img}" class="img-fluid anhthem" width="60" height="60" alt="">
             <div class="" style="width: 140px;">
             <div class="d-flex align-items-center justify-content-end">
-              <p class="giatiensanpham">${list.giatien}</p>
+              <p class="giatiensanpham">${list.giatien*list.quantity}</p>
               <p class="dong">.000đ</p>
           </div>
           <div class="xoabor mt-3" data-index="${index}">
@@ -275,7 +340,7 @@ const app=(function (){
                 htmlss.innerHTML=html.join('')
               }
                res = lists.reduce((total,currentValue) => {
-                  return total + currentValue.giatien;
+                  return total + currentValue.giatien*currentValue.quantity;
                 },0)
                 document.querySelector('.tongtien').textContent=`${res}`
                 document.querySelector('.tamtinh1').textContent=`${res}`
@@ -300,7 +365,10 @@ const app=(function (){
              }
              const soluong=document.querySelector('.soluong')
              let so=lists.length
-             soluong.textContent=`(${so} số lượng)`
+             let so1 = lists.reduce((total,currentValue) => {
+                return total +currentValue.quantity;
+              },0)
+             soluong.textContent=`(${so1} số lượng)`
             }
             const anhien=document.querySelector('.anhien')
             anhien.onclick=function(a){
@@ -316,7 +384,7 @@ const app=(function (){
             const hang=document.querySelector('.dathang')
             hang.onclick=function(){
                 let tich = lists.reduce((total,currentValue) => {
-                    return total + currentValue.giatien;
+                    return total + currentValue.giatien*currentValue.quantity;
                   },0)
                   let checkso2=document.getElementById('myCheck')
                   if(checkso2.checked){
